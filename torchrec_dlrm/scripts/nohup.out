@@ -1,0 +1,6 @@
++ mkdir -p /N/scratch/haofeng/criteo_TB/criteo_TB_tmp/temp_output_of_step_1
++ date
+Mon Nov 14 17:30:56 EST 2022
++ python -m torchrec.datasets.scripts.npy_preproc_criteo --input_dir /N/scratch/haofeng/criteo_TB/criteo_TB_raw --output_dir /N/scratch/haofeng/criteo_TB/criteo_TB_tmp/temp_output_of_step_1
+/N/u/haofeng/BigRed200/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/utils/data/datapipes/utils/common.py:135: UserWarning: Local function is not supported by pickle, please use regular python function or functools.partial instead.
+  warnings.warn(

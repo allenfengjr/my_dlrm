@@ -1,0 +1,1 @@
+./process_Criteo_1TB_Click_Logs_dataset.sh /N/scratch/haofeng/criteo_TB/criteo_TB_raw /N/scratch/haofeng/criteo_TB/criteo_TB_tmp /N/scratch/haofeng/criteo_TB/criteo_TB_processed

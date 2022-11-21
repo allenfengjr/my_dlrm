@@ -1,0 +1,11 @@
+#!/bin/bash
+  
+#SBATCH -J process_CriteoTB
+#SBATCH -p general
+#SBATCH -o job_%j.txt
+#SBATCH -e job_%j.err
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=haofeng@iu.edu
+#SBATCH --mem=200G
+
+srun ./process_Criteo_1TB_Click_Logs_dataset.sh /N/scratch/haofeng/criteo_TB/criteo_TB_raw /N/scratch/haofeng/criteo_TB/criteo_TB_tmp /N/scratch/haofeng/criteo_TB/criteo_TB_processed

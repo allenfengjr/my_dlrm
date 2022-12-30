@@ -3,8 +3,8 @@
 #SBATCH --job-name=auto
 #SBATCH -p gpu
 #SBATCH --nodes=2
-#SBATCH --gpus-per-node=4
-#SBATCH --ntasks-per-node=4
+#SBATCH --gpus-per-node=2
+#SBATCH --ntasks-per-node=2
 #SBATCH --time=00:30:00
 #SBATCH --output=output_%j.log 
 
@@ -17,7 +17,7 @@
 
 
 export MASTER_PORT=47149
-export WORLD_SIZE=8
+export WORLD_SIZE=4
 echo "WORLD_SIZE="$WORLD_SIZE
 echo "NODELIST="${SLURM_NODELIST}
 master_addr=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
@@ -28,4 +28,4 @@ cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc
 conda init
 conda activate dlrm
-srun -n 8 python dlrm_main.py --epochs=20
+srun -n 4 python dlrm_main.py --epochs=20

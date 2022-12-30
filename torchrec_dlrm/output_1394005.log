@@ -1,0 +1,45 @@
+WORLD_SIZE=4
+NODELIST=nid[0663-0664]
+MASTER_ADDR=nid0663
+no change     /N/slate/haofeng/anaconda3/condabin/conda
+no change     /N/slate/haofeng/anaconda3/bin/conda
+no change     /N/slate/haofeng/anaconda3/bin/conda-env
+no change     /N/slate/haofeng/anaconda3/bin/activate
+no change     /N/slate/haofeng/anaconda3/bin/deactivate
+no change     /N/slate/haofeng/anaconda3/etc/profile.d/conda.sh
+no change     /N/slate/haofeng/anaconda3/etc/fish/conf.d/conda.fish
+no change     /N/slate/haofeng/anaconda3/shell/condabin/Conda.psm1
+no change     /N/slate/haofeng/anaconda3/shell/condabin/conda-hook.ps1
+no change     /N/slate/haofeng/anaconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /N/slate/haofeng/anaconda3/etc/profile.d/conda.csh
+no change     /N/u/haofeng/BigRed200/.bashrc
+No action taken.
+[Connection] intra_group: [1] -> [[0, 1]]
+[Connection] intra_group: [0] -> [[0, 1]]
+[Connection] intra_group: [3] -> [[2, 3]]
+[Connection] intra_group: [2] -> [[2, 3]]
+[Connection] cross_group: [0] -> [[0, 2]]
+[Connection] cross_group: [2] -> [[0, 2]]
+[Connection] cross_group: [1] -> [[1, 3]]
+[Connection] cross_group: [3] -> [[1, 3]]
+PARAMS: (lr, batch_size, warmup_steps, decay_start, decay_steps): (15.0, 32, 0, 0, 0)
+use random dataset
+Traceback (most recent call last):
+  File "/geode2/home/u030/haofeng/BigRed200/new_dlrm/torchrec_dlrm/dlrm_main.py", line 697, in <module>
+    main(sys.argv[1:])
+  File "/geode2/home/u030/haofeng/BigRed200/new_dlrm/torchrec_dlrm/dlrm_main.py", line 681, in main
+    train_val_test(
+  File "/geode2/home/u030/haofeng/BigRed200/new_dlrm/torchrec_dlrm/dlrm_main.py", line 472, in train_val_test
+    _train(
+  File "/geode2/home/u030/haofeng/BigRed200/new_dlrm/torchrec_dlrm/dlrm_main.py", line 417, in _train
+    pbar = tqdm(iter(int, 1), desc=f"Epoch {epoch}", total=len(train_dataloader), disable=False)
+  File "/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 471, in __len__
+    length = self._IterableDataset_len_called = len(self.dataset)  # type: ignore[assignment, arg-type]
+TypeError: 'NoneType' object cannot be interpreted as an integer
+srun: error: nid0663: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=1394005.0
+slurmstepd: error: *** STEP 1394005.0 ON nid0663 CANCELLED AT 2022-12-30T01:33:55 ***
+srun: error: nid0664: task 3: Terminated
+srun: error: nid0663: task 1: Terminated
+srun: error: nid0664: task 2: Terminated
+srun: Force Terminated StepId=1394005.0

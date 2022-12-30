@@ -536,39 +536,53 @@ def train_val_test(
 
     train_iterator = iter(train_dataloader)
     test_iterator = iter(test_dataloader)
-    for epoch in range(args.epochs):
-        val_iterator = iter(val_dataloader)
-        _train(
-            train_pipeline,
-            train_iterator,
-            val_iterator,
-            val_dataloader,
-            epoch,
-            args.epochs,
-            args.batch_size,
-            args.change_lr,
-            args.lr_change_point,
-            args.lr_after_change_point,
-            lr_scheduler,
-            args.print_lr,
-            args.validation_freq_within_epoch,
-            args.limit_train_batches,
-            args.limit_val_batches,
-        )
-        train_iterator = iter(train_dataloader)
-        val_next_iterator = (
-            test_iterator if epoch == args.epochs - 1 else train_iterator
-        )
-        val_accuracy, val_auroc = _evaluate(
-            args.limit_val_batches,
-            train_pipeline,
-            val_iterator,
-            val_next_iterator,
-            "val",
-        )
+    with torch.profiler.profile(
+        activities=[
+            torch.profiler.ProfilerActivity.CPU,
+            torch.profiler.ProfilerActivity.CUDA],
+        schedule=torch.profiler.schedule(
+            wait=1,
+            warmup=1,
+            active=2),
+        on_trace_ready=torch.profiler.tensorboard_trace_handler('./trace_result', worker_name="4"),
+        record_shapes=True,
+        profile_memory=False,  # This will take 1 to 2 minutes. Setting it to False could greatly speedup.
+        with_stack=True
+    ) as p:
+        for epoch in range(args.epochs):
+            val_iterator = iter(val_dataloader)
+            _train(
+                train_pipeline,
+                train_iterator,
+                val_iterator,
+                val_dataloader,
+                epoch,
+                args.epochs,
+                args.batch_size,
+                args.change_lr,
+                args.lr_change_point,
+                args.lr_after_change_point,
+                lr_scheduler,
+                args.print_lr,
+                args.validation_freq_within_epoch,
+                args.limit_train_batches,
+                args.limit_val_batches,
+            )
+            train_iterator = iter(train_dataloader)
+            val_next_iterator = (
+                test_iterator if epoch == args.epochs - 1 else train_iterator
+            )
+            val_accuracy, val_auroc = _evaluate(
+                args.limit_val_batches,
+                train_pipeline,
+                val_iterator,
+                val_next_iterator,
+                "val",
+            )
 
-        train_val_test_results.val_accuracies.append(val_accuracy)
-        train_val_test_results.val_aurocs.append(val_auroc)
+            train_val_test_results.val_accuracies.append(val_accuracy)
+            train_val_test_results.val_aurocs.append(val_auroc)
+            p.step()
 
     test_accuracy, test_auroc = _evaluate(
         args.limit_test_batches,
@@ -615,8 +629,9 @@ def main(argv: List[str]) -> None:
     rank = int(os.environ["LOCAL_RANK"])
     if torch.cuda.is_available():
         device: torch.device = torch.device(f"cuda:{rank}")
-        backend = "nccl"
+        backend = "gloo" #"nccl"
         torch.cuda.set_device(device)
+        print(f"cuda:{rank}")
     else:
         device: torch.device = torch.device("cpu")
         backend = "gloo"
@@ -639,10 +654,11 @@ def main(argv: List[str]) -> None:
 
     # Sets default limits for random dataloader iterations when left unspecified.
     if args.in_memory_binary_criteo_path is None:
+        print("Use random data")
         for stage in STAGES:
             attr = f"limit_{stage}_batches"
             if getattr(args, attr) is None:
-                setattr(args, attr, 10)
+                setattr(args, attr, 4)
 
     eb_configs = [
         EmbeddingBagConfig(

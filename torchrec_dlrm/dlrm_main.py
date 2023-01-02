@@ -76,11 +76,15 @@ class InteractionType(Enum):
         return self.value
 
 def set_environment():
-    # set os.envion
-    os.environ["RANK"] = os.environ['SLURM_PROCID']
-    os.environ["LOCAL_RANK"] = os.environ["SLURM_LOCALID"]
-    os.environ["GPU_PER_NODE"] = str(torch.cuda.device_count())
-    os.environ["LOCAL_WORLD_SIZE"] = str(torch.cuda.device_count())
+    # set os environment variables
+    if 'SLURM_PROCID' in os.environ:
+        # use slurm to schedule the program
+        os.environ["RANK"] = os.environ['SLURM_PROCID']
+        os.environ["LOCAL_RANK"] = os.environ["SLURM_LOCALID"]
+        os.environ["GPU_PER_NODE"] = str(torch.cuda.device_count())
+        os.environ["LOCAL_WORLD_SIZE"] = str(torch.cuda.device_count())
+    elif '' in os.environ:
+
     return None
 
 

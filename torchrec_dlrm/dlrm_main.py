@@ -8,10 +8,12 @@ import argparse
 import itertools
 import os
 import sys
+import uuid
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import List, Optional
 
+import torchsnapshot
 import torch
 import torcheval.metrics as metrics
 from pyre_extensions import none_throws
@@ -253,9 +255,16 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
         default=None,
         help="Frequency at which validation will be run within an epoch.",
     )
+    parser.add_argument(
+        "--save_path",
+        type=str,
+        default="/N/scratch/haofeng/dlrm_models/",
+        help="The path saves the checkpoint models"
+    )
+    # I edit pin_memory from None to True
     parser.set_defaults(
         pin_memory=None,
-        mmap_mode=None,
+        mmap_mode=True,
         drop_last=None,
         shuffle_batches=None,
         shuffle_training_set=None,
@@ -467,7 +476,13 @@ def train_val_test(
     train_pipeline = TrainPipelineSparseDist(model, optimizer, device)
     val_pipeline = TrainPipelineSparseDist(model, optimizer, device)
     test_pipeline = TrainPipelineSparseDist(model, optimizer, device)
-
+    '''
+    if snapshot_path is not None:
+        snapshot = torchsnapshot.Snapshot(
+            path=snapshot_path,
+        )
+        snapshot.restore(app_state=app_state)
+    '''
     for epoch in range(args.epochs):
         _train(
             train_pipeline,
@@ -483,7 +498,19 @@ def train_val_test(
         )
         val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
         results.val_aurocs.append(val_auroc)
-
+        if epoch%10==0:
+            # torch.save is not a good way, because it can not achieve reshard
+            #torch.save(train_pipeline._model.state_dict(),"epoch_"+str(epoch)+"_rank_"+os.environ["RANK"]+".pth")
+            app_state = {"model": model, "optimizer": optimizer}
+            snapshot = torchsnapshot.Snapshot.take(
+                path=f"{args.save_path}/{uuid.uuid4}",
+                app_state=app_state,
+                replicated=["**"]
+            )
+            if dist.get_rank() ==0:
+                entries = snapshot.get_manifest()
+                for path in entries.keys():
+                    print(path)
     test_auroc = _evaluate(args.limit_test_batches, test_pipeline, test_dataloader, "test")
     results.test_auroc = test_auroc
 
@@ -626,6 +653,7 @@ def main(argv: List[str]) -> None:
         train_model.model.sparse_arch.parameters(),
         {"lr": args.learning_rate},
     )
+    # Here is another place to change sharding
     planner = EmbeddingShardingPlanner(
         topology=Topology(
             local_world_size=get_local_size(),
@@ -644,6 +672,7 @@ def main(argv: List[str]) -> None:
         module=train_model,
         device=device,
         plan=plan,
+        sharders=get_default_sharders()
     )
     if rank == 0 and args.print_sharding_plan:
         for collectionkey, plans in model._plan.plan.items():
@@ -661,11 +690,12 @@ def main(argv: List[str]) -> None:
         dict(in_backward_optimizer_filter(model.named_parameters())),
         optimizer_with_params(),
     )
+    # set up optimizer
     optimizer = CombinedOptimizer([model.fused_optimizer, dense_optimizer])
     lr_scheduler = LRPolicyScheduler(
         optimizer, args.lr_warmup_steps, args.lr_decay_start, args.lr_decay_steps
     )
-
+    
     if args.multi_hot_sizes is not None:
         multihot = Multihot(
             args.multi_hot_sizes,

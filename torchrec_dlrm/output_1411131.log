@@ -1,0 +1,19 @@
+WORLD_SIZE=16
+NODELIST=nid[0642,0700-0702]
+MASTER_ADDR=nid0642
+no change     /N/slate/haofeng/anaconda3/condabin/conda
+no change     /N/slate/haofeng/anaconda3/bin/conda
+no change     /N/slate/haofeng/anaconda3/bin/conda-env
+no change     /N/slate/haofeng/anaconda3/bin/activate
+no change     /N/slate/haofeng/anaconda3/bin/deactivate
+no change     /N/slate/haofeng/anaconda3/etc/profile.d/conda.sh
+no change     /N/slate/haofeng/anaconda3/etc/fish/conf.d/conda.fish
+no change     /N/slate/haofeng/anaconda3/shell/condabin/Conda.psm1
+no change     /N/slate/haofeng/anaconda3/shell/condabin/conda-hook.ps1
+no change     /N/slate/haofeng/anaconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /N/slate/haofeng/anaconda3/etc/profile.d/conda.csh
+no change     /N/u/haofeng/BigRed200/.bashrc
+No action taken.
+PARAMS: (lr, batch_size, warmup_steps, decay_start, decay_steps): (15.0, 4096, 0, 0, 0)
+Epoch 0:   0%|          | 0/64014 [00:00<?, ?it/s]Epoch 0:   0%|          | 1/64014 [00:08<145:09:49,  8.16s/it]Epoch 0:   0%|          | 2/64014 [00:08<62:08:04,  3.49s/it] Epoch 0:   0%|          | 5/64014 [00:08<18:10:54,  1.02s/it]Epoch 0:   0%|          | 7/64014 [00:08<11:36:50,  1.53it/s]Epoch 0:   0%|          | 9/64014 [00:08<7:54:30,  2.25it/s] Epoch 0:   0%|          | 12/64014 [00:09<4:43:26,  3.76it/s]Epoch 0:   0%|          | 15/64014 [00:09<3:08:16,  5.67it/s]Epoch 0:   0%|          | 18/64014 [00:09<2:15:05,  7.90it/s]Epoch 0:   0%|          | 21/64014 [00:09<1:42:13, 10.43it/s]Epoch 0:   0%|          | 24/64014 [00:09<1:42:18, 10.42it/s]Epoch 0:   0%|          | 27/64014 [00:09<1:25:34, 12.46it/s]Epoch 0:   0%|          | 30/64014 [00:09<1:10:51, 15.05it/s]Epoch 0:   0%|          | 33/64014 [00:09<1:00:25, 17.65it/s]Epoch 0:   0%|          | 36/64014 [00:10<53:38, 19.88it/s]  Epoch 0:   0%|          | 39/64014 [00:10<48:54, 21.80it/s]Epoch 0:   0%|          | 43/64014 [00:10<43:34, 24.47it/s]Epoch 0:   0%|          | 47/64014 [00:10<40:23, 26.39it/s]Epoch 0:   0%|          | 51/64014 [00:10<38:23, 27.76it/s]Epoch 0:   0%|          | 55/64014 [00:10<36:58, 28.83it/s]Epoch 0:   0%|          | 59/64014 [00:10<36:06, 29.52it/s]Epoch 0:   0%|          | 63/64014 [00:10<36:34, 29.14it/s]Epoch 0:   0%|          | 66/64014 [00:11<37:01, 28.78it/s]Epoch 0:   0%|          | 70/64014 [00:11<36:03, 29.56it/s]Epoch 0:   0%|          | 74/64014 [00:11<35:06, 30.36it/s]Epoch 0:   0%|          | 78/64014 [00:11<34:38, 30.76it/s]Epoch 0:   0%|          | 82/64014 [00:11<34:08, 31.21it/s]Epoch 0:   0%|          | 86/64014 [00:11<33:47, 31.53it/s]Epoch 0:   0%|          | 90/64014 [00:11<33:53, 31.43it/s]Epoch 0:   0%|          | 94/64014 [00:11<33:52, 31.45it/s]Epoch 0:   0%|          | 98/64014 [00:12<33:44, 31.57it/s]Epoch 0:   0%|          | 102/64014 [00:12<33:52, 31.45it/s]Epoch 0:   0%|          | 106/64014 [00:12<33:59, 31.34it/s]Epoch 0:   0%|          | 110/64014 [00:12<3srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 1411131 ON nid0642 CANCELLED AT 2023-01-01T22:33:39 ***

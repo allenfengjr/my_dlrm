@@ -39,7 +39,6 @@ from torchrec.optim.keyed import CombinedOptimizer, KeyedOptimizerWrapper
 from torchrec.optim.optimizers import in_backward_optimizer_filter
 from tqdm import tqdm
 
-
 # OSS import
 try:
     # pyre-ignore[21]
@@ -75,6 +74,7 @@ class InteractionType(Enum):
     def __str__(self):
         return self.value
 
+
 def set_environment():
     # set os environment variables
     if 'SLURM_PROCID' in os.environ:
@@ -83,8 +83,12 @@ def set_environment():
         os.environ["LOCAL_RANK"] = os.environ["SLURM_LOCALID"]
         os.environ["GPU_PER_NODE"] = str(torch.cuda.device_count())
         os.environ["LOCAL_WORLD_SIZE"] = str(torch.cuda.device_count())
-    elif '' in os.environ:
-
+    elif 'LS_JOBPID' in os.environ:
+        # use LSF scheduler
+        os.environ["RANK"] = os.environ['LSB_JOBINDEX']
+        os.environ["GPU_PER_NODE"] = str(torch.cuda.device_count())
+        os.environ["LOCAL_WORLD_SIZE"] = str(torch.cuda.device_count())
+        os.environ["LOCAL_RANK"] = str(int(os.environ["RANK"]) % int(os.environ['GPU_PER_NODE']))
     return None
 
 
@@ -143,14 +147,14 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
         type=int,
         default=100_000,
         help="max_ind_size. The number of embeddings in each embedding table. Defaults"
-        " to 100_000 if num_embeddings_per_feature is not supplied.",
+             " to 100_000 if num_embeddings_per_feature is not supplied.",
     )
     parser.add_argument(
         "--num_embeddings_per_feature",
         type=str,
         default=None,
         help="Comma separated max_ind_size per sparse feature. The number of embeddings"
-        " in each embedding table. 26 values are expected for the Criteo dataset.",
+             " in each embedding table. 26 values are expected for the Criteo dataset.",
     )
     parser.add_argument(
         "--dense_arch_layer_sizes",
@@ -198,9 +202,9 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
         "--undersampling_rate",
         type=float,
         help="Desired proportion of zero-labeled samples to retain (i.e. undersampling zero-labeled rows)."
-        " Ex. 0.3 indicates only 30pct of the rows with label 0 will be kept."
-        " All rows with label 1 will be kept. Value should be between 0 and 1."
-        " When not supplied, no undersampling occurs.",
+             " Ex. 0.3 indicates only 30pct of the rows with label 0 will be kept."
+             " All rows with label 1 will be kept. Value should be between 0 and 1."
+             " When not supplied, no undersampling occurs.",
     )
     parser.add_argument(
         "--seed",
@@ -218,10 +222,10 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
         dest="mmap_mode",
         action="store_true",
         help="--mmap_mode mmaps the dataset."
-        " That is, the dataset is kept on disk but is accessed as if it were in memory."
-        " --mmap_mode is intended mostly for faster debugging. Use --mmap_mode to bypass"
-        " preloading the dataset when preloading takes too long or when there is "
-        " insufficient memory available to load the full dataset.",
+             " That is, the dataset is kept on disk but is accessed as if it were in memory."
+             " --mmap_mode is intended mostly for faster debugging. Use --mmap_mode to bypass"
+             " preloading the dataset when preloading takes too long or when there is "
+             " insufficient memory available to load the full dataset.",
     )
     parser.add_argument(
         "--in_memory_binary_criteo_path",
@@ -285,7 +289,7 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
         choices=list(InteractionType),
         default=InteractionType.ORIGINAL,
         help="Determine the interaction type to be used (original, dcn, or projection)"
-        " default is original DLRM with pairwise dot product",
+             " default is original DLRM with pairwise dot product",
     )
     parser.add_argument(
         "--collect_multi_hot_freqs_stats",
@@ -328,10 +332,10 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
 
 
 def _evaluate(
-    limit_batches: Optional[int],
-    eval_pipeline: TrainPipelineSparseDist,
-    eval_dataloader: DataLoader,
-    stage: str,
+        limit_batches: Optional[int],
+        eval_pipeline: TrainPipelineSparseDist,
+        eval_dataloader: DataLoader,
+        stage: str,
 ) -> float:
     """
     Evaluates model. Computes and prints AUROC. Helper function for train_val_test.
@@ -384,16 +388,16 @@ def _evaluate(
 
 
 def _train(
-    train_pipeline: TrainPipelineSparseDist,
-    val_pipeline: TrainPipelineSparseDist,
-    train_dataloader: DataLoader,
-    val_dataloader: DataLoader,
-    epoch: int,
-    lr_scheduler,
-    print_lr: bool,
-    validation_freq: Optional[int],
-    limit_train_batches: Optional[int],
-    limit_val_batches: Optional[int],
+        train_pipeline: TrainPipelineSparseDist,
+        val_pipeline: TrainPipelineSparseDist,
+        train_dataloader: DataLoader,
+        val_dataloader: DataLoader,
+        epoch: int,
+        lr_scheduler,
+        print_lr: bool,
+        validation_freq: Optional[int],
+        limit_train_batches: Optional[int],
+        limit_val_batches: Optional[int],
 ) -> None:
     """
     Trains model for 1 epoch. Helper function for train_val_test.
@@ -453,14 +457,14 @@ class TrainValTestResults:
 
 
 def train_val_test(
-    args: argparse.Namespace,
-    model: torch.nn.Module,
-    optimizer: torch.optim.Optimizer,
-    device: torch.device,
-    train_dataloader: DataLoader,
-    val_dataloader: DataLoader,
-    test_dataloader: DataLoader,
-    lr_scheduler: LRPolicyScheduler,
+        args: argparse.Namespace,
+        model: torch.nn.Module,
+        optimizer: torch.optim.Optimizer,
+        device: torch.device,
+        train_dataloader: DataLoader,
+        val_dataloader: DataLoader,
+        test_dataloader: DataLoader,
+        lr_scheduler: LRPolicyScheduler,
 ) -> TrainValTestResults:
     """
     Train/validation/test loop.
@@ -502,16 +506,16 @@ def train_val_test(
         )
         val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
         results.val_aurocs.append(val_auroc)
-        if epoch%10==0:
+        if epoch % 10 == 0:
             # torch.save is not a good way, because it can not achieve reshard
-            #torch.save(train_pipeline._model.state_dict(),"epoch_"+str(epoch)+"_rank_"+os.environ["RANK"]+".pth")
+            # torch.save(train_pipeline._model.state_dict(),"epoch_"+str(epoch)+"_rank_"+os.environ["RANK"]+".pth")
             app_state = {"model": model, "optimizer": optimizer}
             snapshot = torchsnapshot.Snapshot.take(
                 path=f"{args.save_path}/{uuid.uuid4}",
                 app_state=app_state,
                 replicated=["**"]
             )
-            if dist.get_rank() ==0:
+            if dist.get_rank() == 0:
                 entries = snapshot.get_manifest()
                 for path in entries.keys():
                     print(path)
@@ -548,19 +552,19 @@ def main(argv: List[str]) -> None:
 
     if args.multi_hot_sizes is not None:
         assert (
-            args.num_embeddings_per_feature is not None
-            and len(args.multi_hot_sizes) == len(args.num_embeddings_per_feature)
-            or args.num_embeddings_per_feature is None
-            and len(args.multi_hot_sizes) == len(DEFAULT_CAT_NAMES)
+                args.num_embeddings_per_feature is not None
+                and len(args.multi_hot_sizes) == len(args.num_embeddings_per_feature)
+                or args.num_embeddings_per_feature is None
+                and len(args.multi_hot_sizes) == len(DEFAULT_CAT_NAMES)
         ), "--multi_hot_sizes must be a comma delimited list the same size as the number of embedding tables."
     assert (
-        args.in_memory_binary_criteo_path is None or args.synthetic_multi_hot_criteo_path is None
+            args.in_memory_binary_criteo_path is None or args.synthetic_multi_hot_criteo_path is None
     ), "--in_memory_binary_criteo_path and --synthetic_multi_hot_criteo_path are mutually exclusive CLI arguments."
     assert (
-        args.multi_hot_sizes is None or args.synthetic_multi_hot_criteo_path is None
+            args.multi_hot_sizes is None or args.synthetic_multi_hot_criteo_path is None
     ), "--multi_hot_sizes is used to convert 1-hot to multi-hot. It's inapplicable with --synthetic_multi_hot_criteo_path."
     assert (
-        args.multi_hot_distribution_type is None or args.synthetic_multi_hot_criteo_path is None
+            args.multi_hot_distribution_type is None or args.synthetic_multi_hot_criteo_path is None
     ), "--multi_hot_distribution_type is used to convert 1-hot to multi-hot. It's inapplicable with --synthetic_multi_hot_criteo_path."
 
     rank = int(os.environ["LOCAL_RANK"])
@@ -699,7 +703,7 @@ def main(argv: List[str]) -> None:
     lr_scheduler = LRPolicyScheduler(
         optimizer, args.lr_warmup_steps, args.lr_decay_start, args.lr_decay_steps
     )
-    
+
     if args.multi_hot_sizes is not None:
         multihot = Multihot(
             args.multi_hot_sizes,

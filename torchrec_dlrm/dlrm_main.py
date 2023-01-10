@@ -491,34 +491,52 @@ def train_val_test(
         )
         snapshot.restore(app_state=app_state)
     '''
-    for epoch in range(args.epochs):
-        _train(
-            train_pipeline,
-            val_pipeline,
-            train_dataloader,
-            val_dataloader,
-            epoch,
-            lr_scheduler,
-            args.print_lr,
-            args.validation_freq_within_epoch,
-            args.limit_train_batches,
-            args.limit_val_batches,
-        )
-        val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
-        results.val_aurocs.append(val_auroc)
-        if epoch % 10 == 0:
-            # torch.save is not a good way, because it can not achieve reshard
-            # torch.save(train_pipeline._model.state_dict(),"epoch_"+str(epoch)+"_rank_"+os.environ["RANK"]+".pth")
-            app_state = {"model": model, "optimizer": optimizer}
-            snapshot = torchsnapshot.Snapshot.take(
-                path=f"{args.save_path}/{uuid.uuid4}",
-                app_state=app_state,
-                replicated=["**"]
+    with torch.profiler.profile(
+        activities=[
+            torch.profiler.ProfilerActivity.CPU,
+            torch.profiler.ProfilerActivity.CUDA
+        ],
+        schedule=torch.profiler.schedule(
+            wait=2,
+            warmup=2,
+            active=2,
+        ),
+        on_trace_ready=torch.profiler.tensorboard_trace_handler("/N/scratch/haofeng/trace_result/", worker_name="rank"+str(dist.get_rank())),
+        record_shapes=True,
+        profile_memory=True,
+        with_stack=True,
+        with_modules=True
+    ) as p:
+        for epoch in range(args.epochs):
+            _train(
+                train_pipeline,
+                val_pipeline,
+                train_dataloader,
+                val_dataloader,
+                epoch,
+                lr_scheduler,
+                args.print_lr,
+                args.validation_freq_within_epoch,
+                args.limit_train_batches,
+                args.limit_val_batches,
             )
-            if dist.get_rank() == 0:
-                entries = snapshot.get_manifest()
-                for path in entries.keys():
-                    print(path)
+            val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
+            results.val_aurocs.append(val_auroc)
+            if epoch == 1 or epoch == 6 or epoch == 11:
+               p.step()
+            if epoch % 10 == 0:
+                # torch.save is not a good way, because it can not achieve reshard
+                # torch.save(train_pipeline._model.state_dict(),"epoch_"+str(epoch)+"_rank_"+os.environ["RANK"]+".pth")
+                app_state = {"model": model, "optimizer": optimizer}
+                snapshot = torchsnapshot.Snapshot.take(
+                    path=f"{args.save_path}/{os.environ['RANK']}/{str(epoch)}",
+                    app_state=app_state,
+                    replicated=["**"]
+                )
+                if dist.get_rank() == 0:
+                    entries = snapshot.get_manifest()
+                    for path in entries.keys():
+                        print(path)
     test_auroc = _evaluate(args.limit_test_batches, test_pipeline, test_dataloader, "test")
     results.test_auroc = test_auroc
 

@@ -5,7 +5,7 @@
 #SBATCH --nodes=4
 #SBATCH --gpus-per-node=4
 #SBATCH --ntasks-per-node=4
-#SBATCH --time=24:00:00
+#SBATCH --time=72:00:00
 #SBATCH --output=output_%j.log 
 #SBATCH --mem=200G
 
@@ -29,11 +29,13 @@ cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc
 conda init
 conda activate dlrm
+
 srun -n 16 python dlrm_main.py --epochs=$EPOCH \
 --in_memory_binary_criteo_path="/N/scratch/haofeng/TB/processed" \
 --num_embeddings_per_feature "45833188,36746,17245,7413,20243,3,7114,1441,62,29275261,1572176,345138,10,2209,11267,128,4,974,14,48937457,11316796,40094537,452104,12606,104,35" \
 --embedding_dim 128 \
 --batch_size 4096 \
+--learning_rate 7.5 \
 --over_arch_layer_sizes "1024,1024,512,256,1" \
 --dense_arch_layer_sizes "512,256,128" \
 --shuffle_batches \

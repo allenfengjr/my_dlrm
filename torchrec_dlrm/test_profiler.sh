@@ -6,7 +6,7 @@
 #SBATCH --gpus-per-node=4
 #SBATCH --ntasks-per-node=4
 #SBATCH --time=00:30:00
-#SBATCH --output=output_%j.log 
+#SBATCH --output=bigred200_%j.log 
 #SBATCH --mem=200G
 
 #module load nvidia

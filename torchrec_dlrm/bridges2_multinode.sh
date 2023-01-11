@@ -4,7 +4,7 @@
 #SBATCH -p GPU
 #SBATCH -N 2
 #SBATCH -t 24:00:00
-#SBATCH --output=output_%j.log 
+#SBATCH --output=bridge_%j.log 
 #SBATCH --gpus=v100-32:16
 
 #module load nvidia
@@ -24,8 +24,8 @@ export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
 export EPOCH=100
 export DATASET_PATH="/ocean/projects/asc200010p/haofeng1/criteo_TB_processed/"
-export TRACE_PATH="/ocean/projects/asc200010p/haofeng1/trace_results"
-export SAVE_PATH="/ocean/projects/asc200010p/haofeng1/dlrm_models"
+export TRACE_PATH="/ocean/projects/asc200010p/haofeng1/trace_results/2x8/"
+export SAVE_PATH="/ocean/projects/asc200010p/haofeng1/dlrm_models/"
 cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc
 conda init

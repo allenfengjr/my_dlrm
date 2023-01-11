@@ -4414,3 +4414,806 @@ STAGE:2023-01-11 15:06:00 58346:58346 output_json.cpp:417] Completed Stage: Post
 STAGE:2023-01-11 15:06:00 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
 STAGE:2023-01-11 15:06:00 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
 STAGE:2023-01-11 15:06:00 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:01 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:01 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▌         | 1937/32007 [13:53<16:27:51,  1.97s/it]Epoch 0:   6%|▌         | 1938/32007 [13:54<13:52:59,  1.66s/it]STAGE:2023-01-11 15:06:01 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▌         | 1939/32007 [13:54<11:01:46,  1.32s/it]Epoch 0:   6%|▌         | 1940/32007 [13:55<9:10:35,  1.10s/it] Epoch 0:   6%|▌         | 1941/32007 [13:55<7:41:10,  1.09it/s]Epoch 0:   6%|▌         | 1942/32007 [13:55<6:18:08,  1.33it/s]Epoch 0:   6%|▌         | 1943/32007 [13:56<5:18:50,  1.57it/s]Epoch 0:   6%|▌         | 1944/32007 [13:56<4:15:58,  1.96it/s]Epoch 0:   6%|▌         | 1945/32007 [13:56<3:20:09,  2.50it/s]Epoch 0:   6%|▌         | 1946/32007 [13:56<3:13:16,  2.59it/s]Epoch 0:   6%|▌         | 1948/32007 [13:57<2:27:26,  3.40it/s]Epoch 0:   6%|▌         | 1949/32007 [13:57<2:40:38,  3.12it/s]Epoch 0:   6%|▌         | 1950/32007 [13:57<2:30:47,  3.32it/s]Epoch 0:   6%|▌         | 1951/32007 [13:58<2:08:46,  3.89it/s]Epoch 0:   6%|▌         | 1953/32007 [13:58<1:31:59,  5.45it/s]Epoch 0:   6%|▌         | 1955/32007 [13:58<1:19:25,  6.31it/s]Epoch 0:   6%|▌         | 1956/32007 [13:58<1:26:34,  5.79it/s]Epoch 0:   6%|▌         | 195STAGE:2023-01-11 15:06:06 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:06 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+7/32007 [13:58<1:35:51,  5.23it/s]Epoch 0:   6%|▌         | 1958/32007 [13:59<1:49:10,  4.59it/s]STAGE:2023-01-11 15:06:06 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:12 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:12 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:13 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:14 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:14 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▌         | 1959/32007 [14:06<16:51:27,  2.02s/it]Epoch 0:   6%|▌         | 1960/32007 [14:07<14:08:45,  1.69s/it]STAGE:2023-01-11 15:06:14 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▌         | 1961/32007 [14:07<10:40:45,  1.28s/it]Epoch 0:   6%|▌         | 1962/32007 [14:07<8:13:06,  1.02it/s] Epoch 0:   6%|▌         | 1963/32007 [14:07<6:04:43,  1.37it/s]Epoch 0:   6%|▌         | 1964/32007 [14:07<4:40:10,  1.79it/s]Epoch 0:   6%|▌         | 1965/32007 [14:07<3:39:29,  2.28it/s]Epoch 0:   6%|▌         | 1966/32007 [14:08<3:12:24,  2.60it/s]Epoch 0:   6%|▌         | 1967/32007 [14:08<2:45:30,  3.02it/s]Epoch 0:   6%|▌         | 1968/32007 [14:08<2:22:47,  3.51it/s]Epoch 0:   6%|▌         | 1969/32007 [14:08<2:04:34,  4.02it/s]Epoch 0:   6%|▌         | 1970/32007 [14:08<1:54:07,  4.39it/s]Epoch 0:   6%|▌         | 1972/32007 [14:09<1:32:43,  5.40it/s]Epoch 0:   6%|▌         | 1973/32007 [14:09<1:30:26,  5.53it/s]Epoch 0:   6%|▌         | 1974/32007 [14:09<1:32:56,  5.39it/s]Epoch 0:   6%|▌         | 1975/32007 [14:10<2:00:26,  4.16it/s]Epoch 0:   6%|▌         | 1976/32007 [14:10<1:45:20,  4.75it/s]Epoch 0:   6%|▌         | 197STAGE:2023-01-11 15:06:18 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:18 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+8/32007 [14:10<1:22:14,  6.09it/s]Epoch 0:   6%|▌         | 1979/32007 [14:10<1:19:03,  6.33it/s]Epoch 0:   6%|▌         | 1980/32007 [14:10<1:20:01,  6.25it/s]STAGE:2023-01-11 15:06:18 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:24 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:24 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:25 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:25 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:25 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:25 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:37 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▌         | 1981/32007 [14:29<42:05:12,  5.05s/it]Epoch 0:   6%|▌         | 1982/32007 [14:30<33:37:19,  4.03s/it]STAGE:2023-01-11 15:06:37 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:37 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▌         | 1983/32007 [14:30<24:57:01,  2.99s/it]Epoch 0:   6%|▌         | 1985/32007 [14:30<14:03:29,  1.69s/it]Epoch 0:   6%|▌         | 1986/32007 [14:31<10:51:45,  1.30s/it]Epoch 0:   6%|▌         | 1988/32007 [14:31<6:42:05,  1.24it/s] Epoch 0:   6%|▌         | 1990/32007 [14:31<4:29:25,  1.86it/s]Epoch 0:   6%|▌         | 1991/32007 [14:31<3:44:05,  2.23it/s]Epoch 0:   6%|▌         | 1992/32007 [14:31<3:23:24,  2.46it/s]Epoch 0:   6%|▌         | 1993/32007 [14:31<2:47:08,  2.99it/s]Epoch 0:   6%|▌         | 1994/32007 [14:31<2:16:36,  3.66it/s]Epoch 0:   6%|▌         | 1995/32007 [14:32<2:30:19,  3.33it/s]Epoch 0:   6%|▌         | 1996/32007 [14:32<2:12:23,  3.78it/s]Epoch 0:   6%|▌         | 1997/32007 [14:32<2:13:56,  3.73it/s]Epoch 0:   6%|▌         | 1998/32007 [14:32<1:54:14,  4.38it/s]Epoch 0:   6%|▌         | 1999/32007 [14:33<1:47:08,  4.67it/s]Epoch 0:   6%|▌         | 2000/32007 [14:33<1:42:35,  4.87it/s]Epoch 0:   6%|▋         | 2STAGE:2023-01-11 15:06:41 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+001/32007 [14:33<2:34:04,  3.25it/s]Epoch 0:   6%|▋         | 2002/32007 [14:34<3:00:59,  2.76it/s]STAGE:2023-01-11 15:06:41 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:41 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:48 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:48 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:48 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:48 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:48 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:48 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:48 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:48 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:49 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:49 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:49 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:49 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:49 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:49 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:50 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:51 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:06:52 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:06:52 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▋         | 2003/32007 [14:44<27:12:08,  3.26s/it]Epoch 0:   6%|▋         | 2004/32007 [14:45<21:49:52,  2.62s/it]STAGE:2023-01-11 15:06:52 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▋         | 2005/32007 [14:45<16:02:51,  1.93s/it]Epoch 0:   6%|▋         | 2006/32007 [14:45<11:38:47,  1.40s/it]Epoch 0:   6%|▋         | 2007/32007 [14:46<8:48:46,  1.06s/it] Epoch 0:   6%|▋         | 2008/32007 [14:46<6:55:31,  1.20it/s]Epoch 0:   6%|▋         | 2009/32007 [14:46<5:41:50,  1.46it/s]Epoch 0:   6%|▋         | 2010/32007 [14:47<4:41:53,  1.77it/s]Epoch 0:   6%|▋         | 2011/32007 [14:47<3:51:59,  2.16it/s]Epoch 0:   6%|▋         | 2012/32007 [14:47<3:14:11,  2.57it/s]Epoch 0:   6%|▋         | 2014/32007 [14:47<2:10:00,  3.84it/s]Epoch 0:   6%|▋         | 2016/32007 [14:48<1:48:07,  4.62it/s]Epoch 0:   6%|▋         | 2017/32007 [14:48<1:40:42,  4.96it/s]Epoch 0:   6%|▋         | 2018/32007 [14:48<1:50:24,  4.53it/s]Epoch 0:   6%|▋         | 2019/32007 [14:48<1:40:48,  4.96it/s]Epoch 0:   6%|▋         | 2020/32007 [14:48<1:27:54,  5.69it/s]Epoch 0:   6%|▋         | 2021/32007 [14:48<1:24:35,  5.91it/s]Epoch 0:   6%|▋         | 20STAGE:2023-01-11 15:06:56 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:56 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:56 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:56 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:56 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:56 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:56 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+23/32007 [14:49<1:08:12,  7.33it/s]Epoch 0:   6%|▋         | 2024/32007 [14:49<1:12:41,  6.87it/s]STAGE:2023-01-11 15:06:56 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:56 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:56 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:56 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:56 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:57 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:57 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:57 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:06:57 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:02 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:03 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:04 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:04 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:05 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▋         | 2025/32007 [14:57<17:13:56,  2.07s/it]Epoch 0:   6%|▋         | 2026/32007 [14:57<14:37:52,  1.76s/it]STAGE:2023-01-11 15:07:05 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:05 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:09 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:09 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Epoch 0:   6%|▋         | 2027/32007 [14:58<11:09:31,  1.34s/it]Epoch 0:   6%|▋         | 2028/32007 [14:58<8:29:50,  1.02s/it] Epoch 0:   6%|▋         | 2030/32007 [14:58<5:24:49,  1.54it/s]Epoch 0:   6%|▋         | 2031/32007 [14:59<4:35:11,  1.82it/s]Epoch 0:   6%|▋         | 2032/32007 [14:59<3:50:50,  2.16it/s]Epoch 0:   6%|▋         | 2033/32007 [14:59<3:02:31,  2.74it/s]Epoch 0:   6%|▋         | 2035/32007 [14:59<2:07:21,  3.92it/s]Epoch 0:   6%|▋         | 2036/32007 [14:59<2:24:47,  3.45it/s]Epoch 0:   6%|▋         | 2037/32007 [15:00<2:01:01,  4.13it/s]Epoch 0:   6%|▋         | 2038/32007 [15:00<1:48:18,  4.61it/s]Epoch 0:   6%|▋         | 2040/32007 [15:00<1:31:39,  5.45it/s]Epoch 0:   6%|▋         | 2041/32007 [15:00<1:44:11,  4.79it/s]Epoch 0:   6%|▋         | 2042/32007 [15:00<1:45:05,  4.75it/s]Epoch 0:   6%|▋         | 2044/32007 [15:01<1:25:45,  5.82it/s]Epoch 0:   6%|▋         | 2046/32007 [15:01<1:19:55,  6.25it/s]STAGE:2023-01-11 15:07:09 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:15 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:15 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:16 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:16 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▋         | 2047/32007 [15:08<13:07:45,  1.58s/it]Epoch 0:   6%|▋         | 2048/32007 [15:09<11:36:00,  1.39s/it]STAGE:2023-01-11 15:07:16 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▋         | 2049/32007 [15:09<8:58:59,  1.08s/it] Epoch 0:   6%|▋         | 2050/32007 [15:09<7:08:51,  1.16it/s]Epoch 0:   6%|▋         | 2051/32007 [15:09<5:44:12,  1.45it/s]Epoch 0:   6%|▋         | 2053/32007 [15:09<3:38:55,  2.28it/s]Epoch 0:   6%|▋         | 2054/32007 [15:10<3:04:43,  2.70it/s]Epoch 0:   6%|▋         | 2056/32007 [15:10<2:05:48,  3.97it/s]Epoch 0:   6%|▋         | 2057/32007 [15:10<2:00:07,  4.16it/s]Epoch 0:   6%|▋         | 2058/32007 [15:10<1:47:56,  4.62it/s]Epoch 0:   6%|▋         | 2059/32007 [15:10<1:33:11,  5.36it/s]Epoch 0:   6%|▋         | 2060/32007 [15:10<1:21:38,  6.11it/s]Epoch 0:   6%|▋         | 2061/32007 [15:11<1:26:21,  5.78it/s]Epoch 0:   6%|▋         | 2063/32007 [15:11<1:11:22,  6.99it/s]Epoch 0:   6%|▋         | 2065/32007 [15:11<1:13:01,  6.83it/s]Epoch 0:   6%|▋         | 2066/32007 [15:11<1:15:33,  6.60it/s]Epoch 0:   6%|▋         | 2067/32007 [15:11<1:10:44,  7.05it/s]Epoch 0:   6%|▋         | 2068STAGE:2023-01-11 15:07:19 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:19 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+/32007 [15:11<1:12:49,  6.85it/s]STAGE:2023-01-11 15:07:19 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:25 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:25 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:25 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:25 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:25 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:25 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:25 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:25 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:25 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:25 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:25 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:26 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:26 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:26 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:26 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:26 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:26 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:26 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▋         | 2069/32007 [15:18<16:04:43,  1.93s/it]Epoch 0:   6%|▋         | 2070/32007 [15:19<13:33:24,  1.63s/it]STAGE:2023-01-11 15:07:26 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   6%|▋         | 2071/32007 [15:19<10:05:07,  1.21s/it]Epoch 0:   6%|▋         | 2072/32007 [15:19<7:27:55,  1.11it/s] Epoch 0:   6%|▋         | 2073/32007 [15:20<5:42:09,  1.46it/s]Epoch 0:   6%|▋         | 2075/32007 [15:20<4:07:12,  2.02it/s]Epoch 0:   6%|▋         | 2076/32007 [15:21<4:01:05,  2.07it/s]Epoch 0:   6%|▋         | 2078/32007 [15:21<3:07:05,  2.67it/s]Epoch 0:   6%|▋         | 2079/32007 [15:21<2:53:11,  2.88it/s]Epoch 0:   6%|▋         | 2080/32007 [15:22<2:37:30,  3.17it/s]Epoch 0:   7%|▋         | 2081/32007 [15:22<2:42:28,  3.07it/s]Epoch 0:   7%|▋         | 2082/32007 [15:22<2:21:02,  3.54it/s]Epoch 0:   7%|▋         | 2083/32007 [15:22<2:13:48,  3.73it/s]Epoch 0:   7%|▋         | 2084/32007 [15:22<2:02:38,  4.07it/s]Epoch 0:   7%|▋         | 2085/32007 [15:23<2:23:33,  3.47it/s]Epoch 0:   7%|▋         | 2086/32007 [15:23<2:15:08,  3.69it/s]Epoch 0:   7%|▋         | 2087/32007 [15:24<2:45:03,  3.02it/s]Epoch 0:   7%|▋         | 208STAGE:2023-01-11 15:07:32 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:32 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+8/32007 [15:24<2:14:32,  3.71it/s]Epoch 0:   7%|▋         | 2089/32007 [15:24<2:18:23,  3.60it/s]Epoch 0:   7%|▋         | 2090/32007 [15:24<2:31:02,  3.30it/s]STAGE:2023-01-11 15:07:32 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:38 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:38 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:39 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:44 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:07:44 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2091/32007 [15:34<24:45:26,  2.98s/it]Epoch 0:   7%|▋         | 2092/32007 [15:37<25:32:12,  3.07s/it]STAGE:2023-01-11 15:07:44 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2093/32007 [15:38<19:37:20,  2.36s/it]Epoch 0:   7%|▋         | 2094/32007 [15:38<14:43:09,  1.77s/it]Epoch 0:   7%|▋         | 2095/32007 [15:38<10:56:17,  1.32s/it]Epoch 0:   7%|▋         | 2096/32007 [15:38<8:06:53,  1.02it/s] Epoch 0:   7%|▋         | 2097/32007 [15:39<6:24:20,  1.30it/s]Epoch 0:   7%|▋         | 2099/32007 [15:40<6:46:15,  1.23it/s]Epoch 0:   7%|▋         | 2100/32007 [15:41<5:24:24,  1.54it/s]Epoch 0:   7%|▋         | 2101/32007 [15:41<5:06:12,  1.63it/s]Epoch 0:   7%|▋         | 2102/32007 [15:42<4:46:25,  1.74it/s]Epoch 0:   7%|▋         | 2103/32007 [15:42<4:16:02,  1.95it/s]Epoch 0:   7%|▋         | 2104/32007 [15:42<3:30:27,  2.37it/s]Epoch 0:   7%|▋         | 2105/32007 [15:42<2:48:38,  2.96it/s]Epoch 0:   7%|▋         | 2106/32007 [15:42<2:20:29,  3.55it/s]Epoch 0:   7%|▋         | 2107/32007 [15:43<2:20:10,  3.56it/s]Epoch 0:   7%|▋         | 2108/32007 [15:43<2:12:37,  3.76it/s]Epoch 0:   7%|▋         | 2STAGE:2023-01-11 15:07:52 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:52 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+109/32007 [15:43<2:11:12,  3.80it/s]Epoch 0:   7%|▋         | 2111/32007 [15:44<2:05:09,  3.98it/s]Epoch 0:   7%|▋         | 2112/32007 [15:44<2:15:35,  3.67it/s]STAGE:2023-01-11 15:07:52 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:07:58 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:58 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:59 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:07:59 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:00 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:01 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:01 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2113/32007 [15:53<20:59:46,  2.53s/it]Epoch 0:   7%|▋         | 2114/32007 [15:54<17:12:24,  2.07s/it]STAGE:2023-01-11 15:08:01 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:04 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Epoch 0:   7%|▋         | 2115/32007 [15:54<12:52:05,  1.55s/it]Epoch 0:   7%|▋         | 2116/32007 [15:54<9:32:58,  1.15s/it] Epoch 0:   7%|▋         | 2117/32007 [15:54<7:08:35,  1.16it/s]Epoch 0:   7%|▋         | 2119/32007 [15:54<4:17:32,  1.93it/s]Epoch 0:   7%|▋         | 2120/32007 [15:55<3:28:07,  2.39it/s]Epoch 0:   7%|▋         | 2121/32007 [15:55<2:59:42,  2.77it/s]Epoch 0:   7%|▋         | 2122/32007 [15:55<2:39:38,  3.12it/s]Epoch 0:   7%|▋         | 2123/32007 [15:55<2:20:04,  3.56it/s]Epoch 0:   7%|▋         | 2125/32007 [15:55<1:43:30,  4.81it/s]Epoch 0:   7%|▋         | 2126/32007 [15:56<1:38:26,  5.06it/s]Epoch 0:   7%|▋         | 2127/32007 [15:56<1:30:26,  5.51it/s]Epoch 0:   7%|▋         | 2129/32007 [15:56<1:17:12,  6.45it/s]Epoch 0:   7%|▋         | 2130/32007 [15:56<1:19:53,  6.23it/s]Epoch 0:   7%|▋         | 2132/32007 [15:56<1:05:09,  7.64it/s]Epoch 0:   7%|▋         | 2133/32007 [15:56<1:09:32,  7.16it/s]STAGE:2023-01-11 15:08:04 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:04 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:10 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:10 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:10 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:10 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:10 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:10 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:10 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:10 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:11 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:11 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:11 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:11 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:11 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:11 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:11 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:11 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:12 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:12 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2135/32007 [16:04<12:13:06,  1.47s/it]Epoch 0:   7%|▋         | 2136/32007 [16:04<10:50:38,  1.31s/it]STAGE:2023-01-11 15:08:12 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:14 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Epoch 0:   7%|▋         | 2138/32007 [16:04<6:57:53,  1.19it/s] Epoch 0:   7%|▋         | 2140/32007 [16:05<4:44:50,  1.75it/s]Epoch 0:   7%|▋         | 2142/32007 [16:05<3:22:24,  2.46it/s]Epoch 0:   7%|▋         | 2144/32007 [16:05<2:29:54,  3.32it/s]Epoch 0:   7%|▋         | 2146/32007 [16:05<2:01:50,  4.08it/s]Epoch 0:   7%|▋         | 2147/32007 [16:05<2:00:02,  4.15it/s]Epoch 0:   7%|▋         | 2149/32007 [16:06<1:32:35,  5.37it/s]Epoch 0:   7%|▋         | 2150/32007 [16:06<1:24:20,  5.90it/s]Epoch 0:   7%|▋         | 2151/32007 [16:06<1:18:20,  6.35it/s]Epoch 0:   7%|▋         | 2152/32007 [16:06<1:11:57,  6.92it/s]Epoch 0:   7%|▋         | 2153/32007 [16:06<1:07:15,  7.40it/s]Epoch 0:   7%|▋         | 2154/32007 [16:06<1:17:35,  6.41it/s]Epoch 0:   7%|▋         | 2156/32007 [16:06<1:00:40,  8.20it/s]STAGE:2023-01-11 15:08:14 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:14 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:20 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:20 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:20 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:20 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:20 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:20 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:20 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:20 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:20 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:20 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:21 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:21 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:21 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:21 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:21 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:21 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:21 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:21 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2157/32007 [16:13<14:29:38,  1.75s/it]Epoch 0:   7%|▋         | 2158/32007 [16:14<12:21:47,  1.49s/it]STAGE:2023-01-11 15:08:21 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:24 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Epoch 0:   7%|▋         | 2159/32007 [16:14<9:20:56,  1.13s/it] Epoch 0:   7%|▋         | 2161/32007 [16:14<5:36:52,  1.48it/s]Epoch 0:   7%|▋         | 2162/32007 [16:15<4:33:40,  1.82it/s]Epoch 0:   7%|▋         | 2164/32007 [16:15<3:07:41,  2.65it/s]Epoch 0:   7%|▋         | 2165/32007 [16:15<2:43:10,  3.05it/s]Epoch 0:   7%|▋         | 2166/32007 [16:15<2:16:42,  3.64it/s]Epoch 0:   7%|▋         | 2168/32007 [16:15<1:40:24,  4.95it/s]Epoch 0:   7%|▋         | 2170/32007 [16:15<1:17:41,  6.40it/s]Epoch 0:   7%|▋         | 2172/32007 [16:16<1:05:18,  7.61it/s]Epoch 0:   7%|▋         | 2174/32007 [16:16<1:00:11,  8.26it/s]Epoch 0:   7%|▋         | 2176/32007 [16:16<51:20,  9.68it/s]  Epoch 0:   7%|▋         | 2178/32007 [16:16<49:15, 10.09it/s]STAGE:2023-01-11 15:08:24 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:24 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:30 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:30 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:31 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:31 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2180/32007 [16:24<10:37:40,  1.28s/it]STAGE:2023-01-11 15:08:31 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:33 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:33 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Epoch 0:   7%|▋         | 2181/32007 [16:24<8:55:45,  1.08s/it] Epoch 0:   7%|▋         | 2183/32007 [16:24<6:08:06,  1.35it/s]Epoch 0:   7%|▋         | 2185/32007 [16:24<4:22:45,  1.89it/s]Epoch 0:   7%|▋         | 2187/32007 [16:25<3:11:25,  2.60it/s]Epoch 0:   7%|▋         | 2189/32007 [16:25<2:26:50,  3.38it/s]Epoch 0:   7%|▋         | 2191/32007 [16:25<1:56:21,  4.27it/s]Epoch 0:   7%|▋         | 2193/32007 [16:25<1:37:34,  5.09it/s]Epoch 0:   7%|▋         | 2195/32007 [16:25<1:21:14,  6.12it/s]Epoch 0:   7%|▋         | 2197/32007 [16:26<1:11:16,  6.97it/s]Epoch 0:   7%|▋         | 2199/32007 [16:26<1:01:10,  8.12it/s]STAGE:2023-01-11 15:08:33 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:39 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:40 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:41 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:42 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:42 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2201/32007 [16:34<11:00:30,  1.33s/it]Epoch 0:   7%|▋         | 2202/32007 [16:35<10:06:03,  1.22s/it]STAGE:2023-01-11 15:08:42 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:44 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:44 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Epoch 0:   7%|▋         | 2203/32007 [16:35<8:16:40,  1.00it/s] Epoch 0:   7%|▋         | 2205/32007 [16:35<5:31:38,  1.50it/s]Epoch 0:   7%|▋         | 2206/32007 [16:35<4:34:04,  1.81it/s]Epoch 0:   7%|▋         | 2208/32007 [16:35<3:07:07,  2.65it/s]Epoch 0:   7%|▋         | 2210/32007 [16:35<2:18:03,  3.60it/s]Epoch 0:   7%|▋         | 2212/32007 [16:36<1:45:52,  4.69it/s]Epoch 0:   7%|▋         | 2214/32007 [16:36<1:28:00,  5.64it/s]Epoch 0:   7%|▋         | 2216/32007 [16:36<1:13:03,  6.80it/s]Epoch 0:   7%|▋         | 2218/32007 [16:36<1:03:56,  7.77it/s]Epoch 0:   7%|▋         | 2220/32007 [16:36<58:54,  8.43it/s]  Epoch 0:   7%|▋         | 2222/32007 [16:37<57:19,  8.66it/s]STAGE:2023-01-11 15:08:44 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:50 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:50 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:50 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:50 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:50 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:50 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:50 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:51 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:51 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:51 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:51 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:51 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:51 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:51 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:51 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:51 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:08:52 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2224/32007 [16:44<10:33:42,  1.28s/it]STAGE:2023-01-11 15:08:52 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:08:52 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2225/32007 [16:45<8:58:37,  1.09s/it] Epoch 0:   7%|▋         | 2226/32007 [16:45<7:35:06,  1.09it/s]Epoch 0:   7%|▋         | 2227/32007 [16:45<6:07:56,  1.35it/s]Epoch 0:   7%|▋         | 2228/32007 [16:45<4:54:23,  1.69it/s]Epoch 0:   7%|▋         | 2229/32007 [16:45<4:12:16,  1.97it/s]Epoch 0:   7%|▋         | 2230/32007 [16:46<3:46:36,  2.19it/s]Epoch 0:   7%|▋         | 2231/32007 [16:46<3:07:06,  2.65it/s]Epoch 0:   7%|▋         | 2232/32007 [16:46<2:53:57,  2.85it/s]Epoch 0:   7%|▋         | 2233/32007 [16:47<2:53:44,  2.86it/s]Epoch 0:   7%|▋         | 2234/32007 [16:47<2:39:47,  3.11it/s]Epoch 0:   7%|▋         | 2235/32007 [16:47<2:25:17,  3.42it/s]Epoch 0:   7%|▋         | 2236/32007 [16:47<2:22:40,  3.48it/s]Epoch 0:   7%|▋         | 2237/32007 [16:48<2:26:22,  3.39it/s]Epoch 0:   7%|▋         | 2238/32007 [16:48<2:20:23,  3.53it/s]Epoch 0:   7%|▋         | 2239/32007 [16:48<1:55:24,  4.30it/s]Epoch 0:   7%|▋         | 2240STAGE:2023-01-11 15:08:58 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:08:58 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+/32007 [16:49<2:43:34,  3.03it/s]Epoch 0:   7%|▋         | 2241/32007 [16:49<2:44:16,  3.02it/s]Epoch 0:   7%|▋         | 2242/32007 [16:50<3:35:56,  2.30it/s]Epoch 0:   7%|▋         | 2243/32007 [16:50<2:52:14,  2.88it/s]Epoch 0:   7%|▋         | 2244/32007 [16:50<3:05:40,  2.67it/s]STAGE:2023-01-11 15:08:58 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:04 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:04 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:05 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:06 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2245/32007 [16:57<19:55:27,  2.41s/it]Epoch 0:   7%|▋         | 2246/32007 [16:58<16:33:04,  2.00s/it]STAGE:2023-01-11 15:09:06 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:06 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:10 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:10 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Epoch 0:   7%|▋         | 2247/32007 [16:58<11:50:20,  1.43s/it]Epoch 0:   7%|▋         | 2248/32007 [16:59<9:06:26,  1.10s/it] Epoch 0:   7%|▋         | 2249/32007 [16:59<6:58:25,  1.19it/s]Epoch 0:   7%|▋         | 2251/32007 [16:59<4:07:53,  2.00it/s]Epoch 0:   7%|▋         | 2252/32007 [16:59<3:32:19,  2.34it/s]Epoch 0:   7%|▋         | 2253/32007 [17:00<3:12:59,  2.57it/s]Epoch 0:   7%|▋         | 2254/32007 [17:00<2:47:13,  2.97it/s]Epoch 0:   7%|▋         | 2256/32007 [17:00<2:17:30,  3.61it/s]Epoch 0:   7%|▋         | 2257/32007 [17:01<2:29:59,  3.31it/s]Epoch 0:   7%|▋         | 2259/32007 [17:01<2:10:50,  3.79it/s]Epoch 0:   7%|▋         | 2260/32007 [17:02<2:20:55,  3.52it/s]Epoch 0:   7%|▋         | 2262/32007 [17:02<2:05:47,  3.94it/s]Epoch 0:   7%|▋         | 2263/32007 [17:02<2:14:43,  3.68it/s]Epoch 0:   7%|▋         | 2265/32007 [17:03<1:48:19,  4.58it/s]Epoch 0:   7%|▋         | 2266/32007 [17:03<1:43:45,  4.78it/s]STAGE:2023-01-11 15:09:10 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:16 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:17 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:18 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2267/32007 [17:10<14:54:59,  1.81s/it]Epoch 0:   7%|▋         | 2268/32007 [17:11<12:54:36,  1.56s/it]STAGE:2023-01-11 15:09:18 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:18 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2269/32007 [17:11<10:22:26,  1.26s/it]Epoch 0:   7%|▋         | 2270/32007 [17:11<8:24:00,  1.02s/it] Epoch 0:   7%|▋         | 2271/32007 [17:12<6:52:44,  1.20it/s]Epoch 0:   7%|▋         | 2272/32007 [17:12<5:30:34,  1.50it/s]Epoch 0:   7%|▋         | 2273/32007 [17:12<4:15:37,  1.94it/s]Epoch 0:   7%|▋         | 2274/32007 [17:12<3:41:14,  2.24it/s]Epoch 0:   7%|▋         | 2275/32007 [17:13<3:27:04,  2.39it/s]Epoch 0:   7%|▋         | 2276/32007 [17:13<2:43:55,  3.02it/s]Epoch 0:   7%|▋         | 2277/32007 [17:13<2:24:50,  3.42it/s]Epoch 0:   7%|▋         | 2278/32007 [17:13<2:14:53,  3.67it/s]Epoch 0:   7%|▋         | 2280/32007 [17:14<1:45:26,  4.70it/s]Epoch 0:   7%|▋         | 2281/32007 [17:14<1:57:40,  4.21it/s]Epoch 0:   7%|▋         | 2282/32007 [17:14<1:49:23,  4.53it/s]Epoch 0:   7%|▋         | 2283/32007 [17:14<1:34:26,  5.25it/s]Epoch 0:   7%|▋         | 2284/32007 [17:14<1:51:48,  4.43it/s]Epoch 0:   7%|▋         | 228STAGE:2023-01-11 15:09:23 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:23 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+6/32007 [17:15<2:05:58,  3.93it/s]Epoch 0:   7%|▋         | 2287/32007 [17:15<2:24:20,  3.43it/s]Epoch 0:   7%|▋         | 2288/32007 [17:16<2:19:07,  3.56it/s]STAGE:2023-01-11 15:09:23 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:29 57856:57856 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 52668:52668 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 49970:49970 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 58347:58347 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 58345:58345 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 58344:58344 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 49971:49971 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 57858:57858 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 57855:57855 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 49969:49969 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 52667:52667 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 57857:57857 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 58346:58346 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 49968:49968 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 52670:52670 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:30 52669:52669 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 15:09:31 57856:57856 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 52668:52668 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 57857:57857 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 58345:58345 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 52669:52669 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 58347:58347 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 49969:49969 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 58346:58346 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 49970:49970 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 49971:49971 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 58344:58344 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 52670:52670 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 57858:57858 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 52667:52667 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 15:09:31 49968:49968 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2289/32007 [17:23<17:35:47,  2.13s/it]Epoch 0:   7%|▋         | 2290/32007 [17:24<14:45:45,  1.79s/it]STAGE:2023-01-11 15:09:31 57855:57855 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   7%|▋         | 2291/32007 [17:24<11:37:05,  1.41s/it]Epoch 0:   7%|▋         | 2292/32007 [17:25<9:21:24,  1.13s/it] Epoch 0:   7%|▋         | 2294/32007 [17:25<5:38:31,  1.46it/s]Epoch 0:   7%|▋         | 2295/32007 [17:25<4:40:22,  1.77it/s]Epoch 0:   7%|▋         | 2296/32007 [17:26<4:20:02,  1.90it/s]Epoch 0:   7%|▋         | 2298/32007 [17:26<2:53:01,  2.86it/s]Epoch 0:   7%|▋         | 2299/32007 [17:26<2:42:20,  3.05it/s]Epoch 0:   7%|▋         | 2300/32007 [17:26<2:44:06,  3.02it/s]Epoch 0:   7%|▋         | 2301/32007 [17:27<2:37:51,  3.14it/s]Epoch 0:   7%|▋         | 2302/32007 [17:27<2:36:54,  3.16it/s]Epoch 0:   7%|▋         | 2303/32007 [17:27<2:19:41,  3.54it/s]Epoch 0:   7%|▋         | 2305/32007 [17:28<1:53:36,  4.36it/s]Epoch 0:   7%|▋         | 2306/32007 [17:28<1:52:45,  4.39it/s]Epoch 0:   7%|▋         | 2307/32007 [17:28<1:41:33,  4.87it/s]Epoch 0:   7%|▋         | 2308/32007 [17:28<1:56:28,  4.25it/s]Epoch 0:   7%|▋         | 231STAGE:2023-01-11 15:09:36 58346:58346 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 49970:49970 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 57856:57856 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 58345:58345 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 49969:49969 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 52668:52668 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 57857:57857 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 58344:58344 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 49968:49968 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 49971:49971 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 58347:58347 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 52669:52669 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 52667:52667 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 57858:57858 ActivityProfilerController.cpp:300] Completed Stage: Collection
+0/32007 [17:29<1:46:08,  4.66it/s]STAGE:2023-01-11 15:09:36 57855:57855 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 15:09:36 52670:52670 ActivityProfilerController.cpp:300] Completed Stage: Collection
+slurmstepd: error: *** STEP 1435941.0 ON nid0653 CANCELLED AT 2023-01-11T15:09:37 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 1435941 ON nid0653 CANCELLED AT 2023-01-11T15:09:37 ***

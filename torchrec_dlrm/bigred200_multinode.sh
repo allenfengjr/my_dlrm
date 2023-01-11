@@ -6,7 +6,7 @@
 #SBATCH --gpus-per-node=4
 #SBATCH --ntasks-per-node=4
 #SBATCH --time=24:00:00
-#SBATCH --output=output_%j.log 
+#SBATCH --output=bigred_%j.log 
 #SBATCH --mem=200G
 
 #module load nvidia
@@ -25,8 +25,8 @@ master_addr=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
 export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
 export EPOCH=100
-export TRACE_PATH="/N/scratch/haofeng/trace_results"
-export SAVE_PATH="/N/scratch/haofeng/dlrm_models/batch_test/"
+export TRACE_PATH="/N/scratch/haofeng/trace_result/8x4"
+export SAVE_PATH="/N/scratch/haofeng/dlrm_models/"
 export BATCH_SIZE=8192
 cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc

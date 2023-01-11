@@ -25,6 +25,8 @@ master_addr=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
 export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
 export EPOCH=100
+export TRACE_PATH="/N/scratch/haofeng/trace_results"
+export SAVE_PATH="/N/scratch/haofeng/dlrm_models"
 cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc
 conda init
@@ -38,4 +40,5 @@ srun -n 16 python dlrm_main.py --epochs=$EPOCH \
 --dense_arch_layer_sizes "512,256,128" \
 --shuffle_batches \
 --print_sharding_plan \
---save_path="/N/scratch/haofeng/dlrm_models"
+--save_path=$SAVE_PATH \
+--trace_path=$TRACE_PATH

@@ -1,0 +1,83 @@
+WORLD_SIZE=16
+NODELIST=v[031-032]
+MASTER_ADDR=v031
+/var/spool/slurm/d/job14006254/slurm_script: line 26: cd: /jet/home/haofeng1/new_dlrm/torchrec_dlrm/: No such file or directory
+no change     /jet/home/haofeng1/anaconda3/condabin/conda
+no change     /jet/home/haofeng1/anaconda3/bin/conda
+no change     /jet/home/haofeng1/anaconda3/bin/conda-env
+no change     /jet/home/haofeng1/anaconda3/bin/activate
+no change     /jet/home/haofeng1/anaconda3/bin/deactivate
+no change     /jet/home/haofeng1/anaconda3/etc/profile.d/conda.sh
+no change     /jet/home/haofeng1/anaconda3/etc/fish/conf.d/conda.fish
+no change     /jet/home/haofeng1/anaconda3/shell/condabin/Conda.psm1
+no change     /jet/home/haofeng1/anaconda3/shell/condabin/conda-hook.ps1
+no change     /jet/home/haofeng1/anaconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /jet/home/haofeng1/anaconda3/etc/profile.d/conda.csh
+no change     /jet/home/haofeng1/.bashrc
+No action taken.
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+Traceback (most recent call last):
+  File "/jet/home/haofeng1/my_dlrm/torchrec_dlrm/dlrm_main.py", line 16, in <module>
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+    import torchsnapshot
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+    import torchsnapshot
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+ModuleNotFoundError: No module named 'torchsnapshot'
+srun: error: v031: tasks 0-7: Exited with exit code 1
+srun: error: v032: tasks 8-15: Exited with exit code 1

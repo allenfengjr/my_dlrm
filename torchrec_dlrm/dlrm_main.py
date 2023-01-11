@@ -269,6 +269,12 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
         default="/N/scratch/haofeng/dlrm_models/",
         help="The path saves the checkpoint models"
     )
+    parser.add_argument(
+        "--trace_path",
+        type=str,
+        default="",
+        help="The path saves the profling trace results"
+    )
     # I edit pin_memory from None to True
     parser.set_defaults(
         pin_memory=None,
@@ -501,7 +507,7 @@ def train_val_test(
             warmup=2,
             active=2,
         ),
-        on_trace_ready=torch.profiler.tensorboard_trace_handler("/N/scratch/haofeng/trace_result/", worker_name="rank"+str(dist.get_rank())),
+        on_trace_ready=torch.profiler.tensorboard_trace_handler(args.trace_path, worker_name="rank"+str(dist.get_rank())),
         record_shapes=True,
         profile_memory=True,
         with_stack=True,
@@ -523,7 +529,7 @@ def train_val_test(
             val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
             results.val_aurocs.append(val_auroc)
             if epoch == 1 or epoch == 6 or epoch == 11:
-               p.step()
+                p.step()
             if epoch % 10 == 0:
                 # torch.save is not a good way, because it can not achieve reshard
                 # torch.save(train_pipeline._model.state_dict(),"epoch_"+str(epoch)+"_rank_"+os.environ["RANK"]+".pth")

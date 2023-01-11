@@ -25,7 +25,8 @@ master_addr=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
 export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
 export EPOCH=100
-cd ~/new_dlrm/torchrec_dlrm/
+export DATASET_PATH="/ocean/projects/asc200010p/haofeng1/criteo_TB_processed/"
+cd ~/my_dlrm/torchrec_dlrm/
 source ~/.bashrc
 conda init
 conda activate dlrm

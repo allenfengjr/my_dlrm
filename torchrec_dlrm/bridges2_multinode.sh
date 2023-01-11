@@ -24,6 +24,8 @@ export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
 export EPOCH=100
 export DATASET_PATH="/ocean/projects/asc200010p/haofeng1/criteo_TB_processed/"
+export TRACE_PATH="/ocean/projects/asc200010p/haofeng1/trace_results"
+export SAVE_PATH="/ocean/projects/asc200010p/haofeng1/dlrm_models"
 cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc
 conda init
@@ -37,4 +39,5 @@ srun -n 16 python dlrm_main.py --epochs=$EPOCH \
 --dense_arch_layer_sizes "512,256,128" \
 --shuffle_batches \
 --print_sharding_plan \
---save_path="/N/scratch/haofeng/dlrm_models"
+--save_path=$SAVE_PATH \
+--trace_path=$TRACE_PATH

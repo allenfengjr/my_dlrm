@@ -8,7 +8,6 @@ import argparse
 import itertools
 import os
 import sys
-import uuid
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import List, Optional
@@ -16,6 +15,7 @@ from typing import List, Optional
 import torchsnapshot
 import torch
 import torcheval.metrics as metrics
+import torch.profiler
 from pyre_extensions import none_throws
 from torch import distributed as dist
 from torch.utils.data import DataLoader
@@ -404,6 +404,8 @@ def _train(
         validation_freq: Optional[int],
         limit_train_batches: Optional[int],
         limit_val_batches: Optional[int],
+        trace_path:Optional[str],
+        enable_trace
 ) -> None:
     """
     Trains model for 1 epoch. Helper function for train_val_test.
@@ -438,22 +440,40 @@ def _train(
     is_rank_zero = dist.get_rank() == 0
     if is_rank_zero:
         pbar = tqdm(iter(int, 1), desc=f"Epoch {epoch}", total=len(train_dataloader), disable=False)
-    for it in itertools.count(1):
-        try:
-            if is_rank_zero and print_lr:
-                for i, g in enumerate(train_pipeline._optimizer.param_groups):
-                    print(f"lr: {it} {i} {g['lr']:.6f}")
-            train_pipeline.progress(iterator)
-            lr_scheduler.step()
-            if is_rank_zero:
-                pbar.update(1)
-            if validation_freq and it % validation_freq == 0:
-                _evaluate(limit_val_batches, val_pipeline, val_dataloader, "val")
-                train_pipeline._model.train()
-        except StopIteration:
-            if is_rank_zero:
-                print("Total number of iterations:", it - 1)
-            break
+    with torch.profiler.profile(
+        activities=[
+            torch.profiler.ProfilerActivity.CPU,
+            torch.profiler.ProfilerActivity.CUDA
+        ],
+        schedule=torch.profiler.schedule(
+            wait=1,
+            warmup=1,
+            active=20,
+        ),
+        on_trace_ready=torch.profiler.tensorboard_trace_handler(trace_path, worker_name="rank"+str(dist.get_rank())),
+        record_shapes=True,
+        profile_memory=True,
+        with_stack=True,
+        with_modules=True
+    ) as pp:
+        for it in itertools.count(1):
+            try:
+                if is_rank_zero and print_lr:
+                    for i, g in enumerate(train_pipeline._optimizer.param_groups):
+                        print(f"lr: {it} {i} {g['lr']:.6f}")
+                train_pipeline.progress(iterator)
+                lr_scheduler.step()
+                if is_rank_zero:
+                    pbar.update(1)
+                if validation_freq and it % validation_freq == 0:
+                    _evaluate(limit_val_batches, val_pipeline, val_dataloader, "val")
+                    train_pipeline._model.train()
+            except StopIteration:
+                if is_rank_zero:
+                    print("Total number of iterations:", it - 1)
+                break
+            if enable_trace and it > 100:
+                pp.step()
 
 
 @dataclass
@@ -497,52 +517,40 @@ def train_val_test(
         )
         snapshot.restore(app_state=app_state)
     '''
-    with torch.profiler.profile(
-        activities=[
-            torch.profiler.ProfilerActivity.CPU,
-            torch.profiler.ProfilerActivity.CUDA
-        ],
-        schedule=torch.profiler.schedule(
-            wait=1,
-            warmup=1,
-            active=20,
-        ),
-        on_trace_ready=torch.profiler.tensorboard_trace_handler(args.trace_path, worker_name="rank"+str(dist.get_rank())),
-        record_shapes=True,
-        profile_memory=True,
-        with_stack=True,
-        with_modules=True
-    ) as p:
-        for epoch in range(args.epochs):
-            _train(
-                train_pipeline,
-                val_pipeline,
-                train_dataloader,
-                val_dataloader,
-                epoch,
-                lr_scheduler,
-                args.print_lr,
-                args.validation_freq_within_epoch,
-                args.limit_train_batches,
-                args.limit_val_batches,
+    for epoch in range(args.epochs):
+        if epoch%5==0:
+            enable_trace=True
+        else:
+            enable_trace=False
+        _train(
+            train_pipeline,
+            val_pipeline,
+            train_dataloader,
+            val_dataloader,
+            epoch,
+            lr_scheduler,
+            args.print_lr,
+            args.validation_freq_within_epoch,
+            args.limit_train_batches,
+            args.limit_val_batches,
+            args.trace_path,
+            enable_trace
+        )
+        val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
+        results.val_aurocs.append(val_auroc)
+        if epoch % 10 == 0:
+            # torch.save is not a good way, because it can not achieve reshard
+            # torch.save(train_pipeline._model.state_dict(),"epoch_"+str(epoch)+"_rank_"+os.environ["RANK"]+".pth")
+            app_state = {"model": model, "optimizer": optimizer}
+            snapshot = torchsnapshot.Snapshot.take(
+                path=f"{args.save_path}/{os.environ['RANK']}/{str(epoch)}",
+                app_state=app_state,
+                replicated=["**"]
             )
-            val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
-            results.val_aurocs.append(val_auroc)
-            #if epoch == 0 or epoch == 5 or epoch == 10:
-            p.step()
-            if epoch % 10 == 0:
-                # torch.save is not a good way, because it can not achieve reshard
-                # torch.save(train_pipeline._model.state_dict(),"epoch_"+str(epoch)+"_rank_"+os.environ["RANK"]+".pth")
-                app_state = {"model": model, "optimizer": optimizer}
-                snapshot = torchsnapshot.Snapshot.take(
-                    path=f"{args.save_path}/{os.environ['RANK']}/{str(epoch)}",
-                    app_state=app_state,
-                    replicated=["**"]
-                )
-                if dist.get_rank() == 0:
-                    entries = snapshot.get_manifest()
-                    for path in entries.keys():
-                        print(path)
+            if dist.get_rank() == 0:
+                entries = snapshot.get_manifest()
+                for path in entries.keys():
+                    print(path)
     test_auroc = _evaluate(args.limit_test_batches, test_pipeline, test_dataloader, "test")
     results.test_auroc = test_auroc
 

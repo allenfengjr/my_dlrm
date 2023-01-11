@@ -26,7 +26,7 @@ export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
 export EPOCH=100
 export TRACE_PATH="/N/scratch/haofeng/trace_results"
-export SAVE_PATH="/N/scratch/haofeng/dlrm_models"
+export SAVE_PATH="/N/scratch/haofeng/dlrm_models/batch_test/"
 export BATCH_SIZE=8192
 cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc

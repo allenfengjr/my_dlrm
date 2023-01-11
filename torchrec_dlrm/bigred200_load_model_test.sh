@@ -6,7 +6,7 @@
 #SBATCH --gpus-per-node=4
 #SBATCH --ntasks-per-node=4
 #SBATCH --time=00:30:00
-#SBATCH --output=output_%j.log 
+#SBATCH --output=bigred_%j.log 
 #SBATCH --mem=200G
 
 #module load nvidia
@@ -24,12 +24,22 @@ echo "NODELIST="${SLURM_NODELIST}
 master_addr=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
 export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
-export EPOCH=100
-export DATASET_PATH="/N/scratch/haofeng/TB/processed/"
-cd ~/my_dlrm/torchrec_dlrm/
+export EPOCH=1
+export TRACE_PATH="/N/scratch/haofeng/trace_result/4x4"
+export SAVE_PATH="/N/scratch/haofeng/dlrm_models/"
+export BATCH_SIZE=8192
+cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc
 conda init
 conda activate dlrm
-
 srun -n 16 python dlrm_main.py --epochs=$EPOCH \
---save_path="/N/scratch/haofeng/dlrm_models/test"
+--in_memory_binary_criteo_path="/N/scratch/haofeng/TB/processed" \
+--num_embeddings_per_feature "45833188,36746,17245,7413,20243,3,7114,1441,62,29275261,1572176,345138,10,2209,11267,128,4,974,14,48937457,11316796,40094537,452104,12606,104,35" \
+--embedding_dim 128 \
+--batch_size $BATCH_SIZE \
+--over_arch_layer_sizes "1024,1024,512,256,1" \
+--dense_arch_layer_sizes "512,256,128" \
+--shuffle_batches \
+--print_sharding_plan \
+--save_path=$SAVE_PATH \
+--trace_path=$TRACE_PATH

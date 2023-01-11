@@ -1,0 +1,323 @@
+WORLD_SIZE=16
+NODELIST=nid[0645-0648]
+MASTER_ADDR=nid0645
+no change     /N/slate/haofeng/anaconda3/condabin/conda
+no change     /N/slate/haofeng/anaconda3/bin/conda
+no change     /N/slate/haofeng/anaconda3/bin/conda-env
+no change     /N/slate/haofeng/anaconda3/bin/activate
+no change     /N/slate/haofeng/anaconda3/bin/deactivate
+no change     /N/slate/haofeng/anaconda3/etc/profile.d/conda.sh
+no change     /N/slate/haofeng/anaconda3/etc/fish/conf.d/conda.fish
+no change     /N/slate/haofeng/anaconda3/shell/condabin/Conda.psm1
+no change     /N/slate/haofeng/anaconda3/shell/condabin/conda-hook.ps1
+no change     /N/slate/haofeng/anaconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /N/slate/haofeng/anaconda3/etc/profile.d/conda.csh
+no change     /N/u/haofeng/BigRed200/.bashrc
+No action taken.
+[Connection] intra_group: [3] -> [[0, 1, 2, 3]]
+[Connection] intra_group: [2] -> [[0, 1, 2, 3]]
+[Connection] intra_group: [1] -> [[0, 1, 2, 3]]
+[Connection] intra_group: [0] -> [[0, 1, 2, 3]]
+[Connection] intra_group: [5] -> [[4, 5, 6, 7]]
+[Connection] intra_group: [4] -> [[4, 5, 6, 7]]
+[Connection] intra_group: [6] -> [[4, 5, 6, 7]]
+[Connection] intra_group: [7] -> [[4, 5, 6, 7]]
+[Connection] intra_group: [8] -> [[8, 9, 10, 11]]
+[Connection] intra_group: [10] -> [[8, 9, 10, 11]]
+[Connection] intra_group: [9] -> [[8, 9, 10, 11]]
+[Connection] intra_group: [11] -> [[8, 9, 10, 11]]
+[Connection] intra_group: [13] -> [[12, 13, 14, 15]]
+[Connection] intra_group: [15] -> [[12, 13, 14, 15]]
+[Connection] intra_group: [12] -> [[12, 13, 14, 15]]
+[Connection] intra_group: [14] -> [[12, 13, 14, 15]]
+[Connection] cross_group: [12] -> [[0, 4, 8, 12]]
+[Connection] cross_group: [4] -> [[0, 4, 8, 12]]
+[Connection] cross_group: [0] -> [[0, 4, 8, 12]]
+[Connection] cross_group: [8] -> [[0, 4, 8, 12]]
+[Connection] cross_group: [9] -> [[1, 5, 9, 13]]
+[Connection] cross_group: [13] -> [[1, 5, 9, 13]]
+[Connection] cross_group: [5] -> [[1, 5, 9, 13]]
+[Connection] cross_group: [1] -> [[1, 5, 9, 13]]
+[Connection] cross_group: [14] -> [[2, 6, 10, 14]]
+[Connection] cross_group: [6] -> [[2, 6, 10, 14]]
+[Connection] cross_group: [2] -> [[2, 6, 10, 14]]
+[Connection] cross_group: [10] -> [[2, 6, 10, 14]]
+[Connection] cross_group: [11] -> [[3, 7, 11, 15]]
+[Connection] cross_group: [7] -> [[3, 7, 11, 15]]
+[Connection] cross_group: [15] -> [[3, 7, 11, 15]]
+[Connection] cross_group: [3] -> [[3, 7, 11, 15]]
+PARAMS: (lr, batch_size, warmup_steps, decay_start, decay_steps): (15.0, 8192, 0, 0, 0)
+model.sparse_arch.embedding_bag_collection
+t_cat_0 
+ ParameterSharding(sharding_type='table_row_wise', compute_kernel='fused', ranks=[4, 5, 6, 7], sharding_spec=EnumerableShardingSpec(shards=[ShardMetadata(shard_offsets=[0, 0], shard_sizes=[11458297, 128], placement=rank:4/cuda:0), ShardMetadata(shard_offsets=[11458297, 0], shard_sizes=[11458297, 128], placement=rank:5/cuda:1), ShardMetadata(shard_offsets=[22916594, 0], shard_sizes=[11458297, 128], placement=rank:6/cuda:2), ShardMetadata(shard_offsets=[34374891, 0], shard_sizes=[11458297, 128], placement=rank:7/cuda:3)])) 
+
+t_cat_1 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_2 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_3 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_4 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_5 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_6 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_7 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_8 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_9 
+ ParameterSharding(sharding_type='table_row_wise', compute_kernel='fused', ranks=[12, 13, 14, 15], sharding_spec=EnumerableShardingSpec(shards=[ShardMetadata(shard_offsets=[0, 0], shard_sizes=[7318816, 128], placement=rank:12/cuda:0), ShardMetadata(shard_offsets=[7318816, 0], shard_sizes=[7318816, 128], placement=rank:13/cuda:1), ShardMetadata(shard_offsets=[14637632, 0], shard_sizes=[7318816, 128], placement=rank:14/cuda:2), ShardMetadata(shard_offsets=[21956448, 0], shard_sizes=[7318813, 128], placement=rank:15/cuda:3)])) 
+
+t_cat_10 
+ ParameterSharding(sharding_type='table_row_wise', compute_kernel='fused', ranks=[4, 5, 6, 7], sharding_spec=EnumerableShardingSpec(shards=[ShardMetadata(shard_offsets=[0, 0], shard_sizes=[393044, 128], placement=rank:4/cuda:0), ShardMetadata(shard_offsets=[393044, 0], shard_sizes=[393044, 128], placement=rank:5/cuda:1), ShardMetadata(shard_offsets=[786088, 0], shard_sizes=[393044, 128], placement=rank:6/cuda:2), ShardMetadata(shard_offsets=[1179132, 0], shard_sizes=[393044, 128], placement=rank:7/cuda:3)])) 
+
+t_cat_11 
+ ParameterSharding(sharding_type='table_row_wise', compute_kernel='fused', ranks=[12, 13, 14, 15], sharding_spec=EnumerableShardingSpec(shards=[ShardMetadata(shard_offsets=[0, 0], shard_sizes=[86285, 128], placement=rank:12/cuda:0), ShardMetadata(shard_offsets=[86285, 0], shard_sizes=[86285, 128], placement=rank:13/cuda:1), ShardMetadata(shard_offsets=[172570, 0], shard_sizes=[86285, 128], placement=rank:14/cuda:2), ShardMetadata(shard_offsets=[258855, 0], shard_sizes=[86283, 128], placement=rank:15/cuda:3)])) 
+
+t_cat_12 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_13 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_14 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_15 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_16 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_17 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_18 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_19 
+ ParameterSharding(sharding_type='table_row_wise', compute_kernel='fused', ranks=[0, 1, 2, 3], sharding_spec=EnumerableShardingSpec(shards=[ShardMetadata(shard_offsets=[0, 0], shard_sizes=[12234365, 128], placement=rank:0/cuda:0), ShardMetadata(shard_offsets=[12234365, 0], shard_sizes=[12234365, 128], placement=rank:1/cuda:1), ShardMetadata(shard_offsets=[24468730, 0], shard_sizes=[12234365, 128], placement=rank:2/cuda:2), ShardMetadata(shard_offsets=[36703095, 0], shard_sizes=[12234362, 128], placement=rank:3/cuda:3)])) 
+
+t_cat_20 
+ ParameterSharding(sharding_type='table_row_wise', compute_kernel='fused', ranks=[0, 1, 2, 3], sharding_spec=EnumerableShardingSpec(shards=[ShardMetadata(shard_offsets=[0, 0], shard_sizes=[2829199, 128], placement=rank:0/cuda:0), ShardMetadata(shard_offsets=[2829199, 0], shard_sizes=[2829199, 128], placement=rank:1/cuda:1), ShardMetadata(shard_offsets=[5658398, 0], shard_sizes=[2829199, 128], placement=rank:2/cuda:2), ShardMetadata(shard_offsets=[8487597, 0], shard_sizes=[2829199, 128], placement=rank:3/cuda:3)])) 
+
+t_cat_21 
+ ParameterSharding(sharding_type='table_row_wise', compute_kernel='fused', ranks=[8, 9, 10, 11], sharding_spec=EnumerableShardingSpec(shards=[ShardMetadata(shard_offsets=[0, 0], shard_sizes=[10023635, 128], placement=rank:8/cuda:0), ShardMetadata(shard_offsets=[10023635, 0], shard_sizes=[10023635, 128], placement=rank:9/cuda:1), ShardMetadata(shard_offsets=[20047270, 0], shard_sizes=[10023635, 128], placement=rank:10/cuda:2), ShardMetadata(shard_offsets=[30070905, 0], shard_sizes=[10023632, 128], placement=rank:11/cuda:3)])) 
+
+t_cat_22 
+ ParameterSharding(sharding_type='table_row_wise', compute_kernel='fused', ranks=[8, 9, 10, 11], sharding_spec=EnumerableShardingSpec(shards=[ShardMetadata(shard_offsets=[0, 0], shard_sizes=[113026, 128], placement=rank:8/cuda:0), ShardMetadata(shard_offsets=[113026, 0], shard_sizes=[113026, 128], placement=rank:9/cuda:1), ShardMetadata(shard_offsets=[226052, 0], shard_sizes=[113026, 128], placement=rank:10/cuda:2), ShardMetadata(shard_offsets=[339078, 0], shard_sizes=[113026, 128], placement=rank:11/cuda:3)])) 
+
+t_cat_23 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_24 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+t_cat_25 
+ ParameterSharding(sharding_type='data_parallel', compute_kernel='dense', ranks=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], sharding_spec=None) 
+
+Epoch 0:   0%|          | 0/32007 [00:00<?, ?it/s]/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
+  warnings.warn(
+Epoch 0:   0%|          | 1/32007 [00:15<139:38:59, 15.71s/it]Epoch 0:   0%|          | 2/32007 [00:15<58:10:45,  6.54s/it] Epoch 0:   0%|          | 4/32007 [00:16<22:14:12,  2.50s/it]Epoch 0:   0%|          | 6/32007 [00:16<12:02:32,  1.35s/it]Epoch 0:   0%|          | 8/32007 [00:16<7:26:54,  1.19it/s] Epoch 0:   0%|          | 10/32007 [00:16<4:58:39,  1.79it/s]Epoch 0:   0%|          | 12/32007 [00:16<3:30:28,  2.53it/s]Epoch 0:   0%|          | 14/32007 [00:16<2:34:59,  3.44it/s]Epoch 0:   0%|          | 16/32007 [00:16<2:00:40,  4.42it/s]Epoch 0:   0%|          | 18/32007 [00:17<1:39:49,  5.34it/s]Epoch 0:   0%|          | 20/32007 [00:17<1:28:19,  6.04it/s]Epoch 0:   0%|          | 22/32007 [00:17<1:18:26,  6.80it/s]Epoch 0:   0%|          | 24/32007 [00:17<1:10:45,  7.53it/s]Epoch 0:   0%|          | 26/32007 [00:18<1:06:00,  8.08it/s]Epoch 0:   0%|          | 28/32007 [00:18<1:01:47,  8.63it/s]Epoch 0:   0%|          | 30/32007 [00:18<58:59,  9.03it/s]  Epoch 0:   0%|          | 32/32007 [00:18<56:48,  9.38it/s]Epoch 0:   0%|          | 34/32007 [00:18<54:41,  9.74it/s]Epoch 0:   0%|          | 36/32007 [00:19<55:33,  9.59it/s]Epoch 0:   0%|          | 38/32007 [00:19<54:32,  9.77it/s]Epoch 0:   0%|          | 40/32007 [00:19<53:12, 10.01it/s]Epoch 0:   0%|          | 42/32007 [00:19<52:02, 10.24it/s]Epoch 0:   0%|          | 44/32007 [00:19<53:03, 10.04it/s]Epoch 0:   0%|          | 46/32007 [00:20<56:41,  9.40it/s]Epoch 0:   0%|          | 48/32007 [00:20<54:27,  9.78it/s]Epoch 0:   0%|          | 50/32007 [00:20<53:00, 10.05it/s]Epoch 0:   0%|          | 52/32007 [00:20<57:04,  9.33it/s]Epoch 0:   0%|          | 54/32007 [00:20<56:56,  9.35it/s]Epoch 0:   0%|          | 55/32007 [00:20<58:13,  9.15it/s]Epoch 0:   0%|          | 56/32007 [00:21<57:54,  9.20it/s]Epoch 0:   0%|          | 58/32007 [00:21<54:46,  9.72it/s]Epoch 0:   0%|          | 60/32007 [00:21<53:46,  9.90it/s]Epoch 0:   0%|          | 61/32007 [00:21<57:36,  9.24it/s]Epoch 0:   0%|          | 62/32007 [00:21<59:41,  8.92it/s]Epoch 0:   0%|          | 64/32007 [00:21<54:25,  9.78it/s]Epoch 0:   0%|          | 66/32007 [00:22<53:27,  9.96it/s]Epoch 0:   0%|          | 68/32007 [00:22<56:26,  9.43it/s]Epoch 0:   0%|          | 70/32007 [00:22<53:16,  9.99it/s]Epoch 0:   0%|          | 72/32007 [00:22<53:14, 10.00it/s]Epoch 0:   0%|          | 74/32007 [00:22<53:04, 10.03it/s]Epoch 0:   0%|          | 76/32007 [00:23<1:03:01,  8.44it/s]Epoch 0:   0%|          | 78/32007 [00:23<59:27,  8.95it/s]  Epoch 0:   0%|          | 80/32007 [00:23<56:39,  9.39it/s]Epoch 0:   0%|          | 82/32007 [00:23<58:41,  9.07it/s]Epoch 0:   0%|          | 83/32007 [00:23<59:28,  8.95it/s]Epoch 0:   0%|          | 85/32007 [00:24<56:31,  9.41it/s]Epoch 0:   0%|          | 87/32007 [00:24<57:37,  9.23it/s]Epoch 0:   0%|          | 88/32007 [00:24<1:01:29,  8.65it/s]Epoch 0:   0%|          | 89/32007 [00:24<1:00:41,  8.77it/s]Epoch 0:   0%|          | 90/32007 [00:24<1:01:25,  8.66it/s]Epoch 0:   0%|          | 92/32007 [00:24<56:11,  9.47it/s]  Epoch 0:   0%|          | 93/32007 [00:25<1:08:36,  7.75it/s]Epoch 0:   0%|          | 95/32007 [00:25<58:05,  9.16it/s]  Epoch 0:   0%|          | 96/32007 [00:25<59:14,  8.98it/s]Epoch 0:   0%|          | 98/32007 [00:25<54:36,  9.74it/s]Epoch 0:   0%|          | 99/32007 [00:25<57:26,  9.26it/s]Epoch 0:   0%|          | 100/32007 [00:25<57:00,  9.33it/s]Epoch 0:   0%|          | 102/32007 [00:26<1:43:30,  5.14it/s]STAGE:2023-01-11 16:02:02 104750:104750 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 104751:104751 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 104752:104752 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 116149:116149 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 104753:104753 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 116150:116150 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 116151:116151 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 116152:116152 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 117089:117089 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 117090:117090 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 116311:116311 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 117091:117091 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 116314:116314 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 117092:117092 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 116312:116312 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:02 116313:116313 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:04 116152:116152 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 116149:116149 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 116151:116151 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 116150:116150 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 116314:116314 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 116311:116311 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 116313:116313 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 116312:116312 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 117089:117089 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 117091:117091 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 117090:117090 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 117092:117092 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 104753:104753 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 104752:104752 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:04 104751:104751 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Epoch 0:   0%|          | 104/32007 [00:26<1:21:38,  6.51it/s]Epoch 0:   0%|          | 106/32007 [00:26<1:08:08,  7.80it/s]Epoch 0:   0%|          | 108/32007 [00:26<59:18,  8.96it/s]  Epoch 0:   0%|          | 110/32007 [00:27<52:47, 10.07it/s]Epoch 0:   0%|          | 112/32007 [00:27<48:59, 10.85it/s]Epoch 0:   0%|          | 114/32007 [00:27<46:22, 11.46it/s]Epoch 0:   0%|          | 116/32007 [00:27<44:32, 11.93it/s]Epoch 0:   0%|          | 118/32007 [00:27<42:14, 12.58it/s]Epoch 0:   0%|          | 120/32007 [00:27<42:45, 12.43it/s]Epoch 0:   0%|          | 122/32007 [00:28<41:51, 12.69it/s]STAGE:2023-01-11 16:02:04 104750:104750 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:09 116151:116151 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 117090:117090 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 117089:117089 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 104752:104752 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 116150:116150 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 116313:116313 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 116152:116152 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 116312:116312 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 117091:117091 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 104751:104751 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 104750:104750 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 104753:104753 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 116149:116149 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 116314:116314 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 116311:116311 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:09 117092:117092 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:10 116152:116152 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 116313:116313 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 117090:117090 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 116151:116151 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 104752:104752 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 117089:117089 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 116150:116150 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 116311:116311 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 117091:117091 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 116149:116149 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 116314:116314 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 104753:104753 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 116312:116312 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 104751:104751 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:10 117092:117092 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   0%|          | 124/32007 [00:34<8:48:29,  1.01it/s]STAGE:2023-01-11 16:02:10 104750:104750 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:12 116311:116311 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 117092:117092 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 116313:116313 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 104752:104752 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 116314:116314 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 117089:117089 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 116149:116149 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 116312:116312 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 104753:104753 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 117091:117091 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 116150:116150 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 104751:104751 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 117090:117090 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 116152:116152 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Epoch 0:   0%|          | 126/32007 [00:34<6:22:18,  1.39it/s]Epoch 0:   0%|          | 128/32007 [00:34<4:39:32,  1.90it/s]Epoch 0:   0%|          | 130/32007 [00:34<3:29:19,  2.54it/s]Epoch 0:   0%|          | 132/32007 [00:34<2:39:36,  3.33it/s]Epoch 0:   0%|          | 134/32007 [00:35<2:06:48,  4.19it/s]Epoch 0:   0%|          | 136/32007 [00:35<1:42:29,  5.18it/s]Epoch 0:   0%|          | 138/32007 [00:35<1:28:46,  5.98it/s]Epoch 0:   0%|          | 140/32007 [00:35<1:15:08,  7.07it/s]Epoch 0:   0%|          | 142/32007 [00:35<1:07:40,  7.85it/s]Epoch 0:   0%|          | 144/32007 [00:36<1:01:23,  8.65it/s]STAGE:2023-01-11 16:02:12 104750:104750 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:12 116151:116151 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:17 117090:117090 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:17 104752:104752 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:17 104750:104750 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:17 117091:117091 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:17 116312:116312 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:17 117089:117089 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:17 104751:104751 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:18 116313:116313 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:18 116152:116152 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:18 104753:104753 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:18 116151:116151 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:18 117092:117092 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:18 116311:116311 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:18 116314:116314 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:18 116150:116150 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:18 116149:116149 output_json.cpp:417] Completed Stage: Post Processing
+STAGE:2023-01-11 16:02:18 104753:104753 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 116314:116314 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 104752:104752 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 117090:117090 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 116312:116312 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 104751:104751 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 117091:117091 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 116313:116313 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+Epoch 0:   0%|          | 146/32007 [00:42<9:24:42,  1.06s/it]STAGE:2023-01-11 16:02:18 104750:104750 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 117092:117092 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 116311:116311 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 117089:117089 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 116149:116149 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 116150:116150 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 116151:116151 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:18 116152:116152 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2023-01-11 16:02:20 117090:117090 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 116150:116150 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 117092:117092 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 117091:117091 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 116149:116149 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 117089:117089 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 104752:104752 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 104753:104753 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 116152:116152 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 116151:116151 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 116314:116314 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 116312:116312 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 104751:104751 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 116313:116313 ActivityProfilerController.cpp:300] Completed Stage: Collection
+STAGE:2023-01-11 16:02:20 116311:116311 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Epoch 0:   0%|          | 148/32007 [00:42<6:48:35,  1.30it/s]Epoch 0:   0%|          | 150/32007 [00:42<4:57:07,  1.79it/s]Epoch 0:   0%|          | 152/32007 [00:43<3:42:20,  2.39it/s]Epoch 0:   0%|          | 154/32007 [00:43<2:49:04,  3.14it/s]Epoch 0:   0%|          | 156/32007 [00:43<2:13:33,  3.97it/s]Epoch 0:   0%|          | 158/32007 [00:43<1:47:16,  4.95it/s]Epoch 0:   0%|          | 160/32007 [00:43<1:27:33,  6.06it/s]Epoch 0:   1%|          | 162/32007 [00:43<1:12:25,  7.33it/s]Epoch 0:   1%|          | 164/32007 [00:44<1:01:51,  8.58it/s]Epoch 0:   1%|          | 166/32007 [00:44<54:56,  9.66it/s]  STAGE:2023-01-11 16:02:20 104750:104750 ActivityProfilerController.cpp:300] Completed Stage: Collection
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1436452.0 ON nid0645 CANCELLED AT 2023-01-11T16:02:24 ***
+slurmstepd: error: *** JOB 1436452 ON nid0645 CANCELLED AT 2023-01-11T16:02:24 ***

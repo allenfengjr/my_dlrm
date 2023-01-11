@@ -448,7 +448,7 @@ def _train(
         schedule=torch.profiler.schedule(
             wait=1,
             warmup=1,
-            active=20,
+            active=40,
         ),
         on_trace_ready=torch.profiler.tensorboard_trace_handler(trace_path, worker_name="rank"+str(dist.get_rank())),
         record_shapes=True,
@@ -472,7 +472,7 @@ def _train(
                 if is_rank_zero:
                     print("Total number of iterations:", it - 1)
                 break
-            if enable_trace and it > 100:
+            if enable_trace and it < 42:
                 pp.step()
 
 
@@ -510,13 +510,15 @@ def train_val_test(
     train_pipeline = TrainPipelineSparseDist(model, optimizer, device)
     val_pipeline = TrainPipelineSparseDist(model, optimizer, device)
     test_pipeline = TrainPipelineSparseDist(model, optimizer, device)
-    '''
-    if snapshot_path is not None:
+    """
+    if args.save_path is not None:
         snapshot = torchsnapshot.Snapshot(
-            path=snapshot_path,
+            path=args.save_path,
         )
+        app_state = {"model": model, "optimizer": optimizer}
+
         snapshot.restore(app_state=app_state)
-    '''
+    """
     for epoch in range(args.epochs):
         if epoch%5==0:
             enable_trace=True
@@ -538,6 +540,7 @@ def train_val_test(
         )
         val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
         results.val_aurocs.append(val_auroc)
+        """
         if epoch % 10 == 0:
             # torch.save is not a good way, because it can not achieve reshard
             # torch.save(train_pipeline._model.state_dict(),"epoch_"+str(epoch)+"_rank_"+os.environ["RANK"]+".pth")
@@ -551,6 +554,7 @@ def train_val_test(
                 entries = snapshot.get_manifest()
                 for path in entries.keys():
                     print(path)
+        """
     test_auroc = _evaluate(args.limit_test_batches, test_pipeline, test_dataloader, "test")
     results.test_auroc = test_auroc
 

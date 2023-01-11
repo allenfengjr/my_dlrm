@@ -5,7 +5,7 @@
 #SBATCH -N 2
 #SBATCH -t 24:00:00
 #SBATCH --output=output_%j.log 
-#SBATCH --gpus=v100-16:16
+#SBATCH --gpus=v100-32:16
 
 #module load nvidia
 #export LD_LIBRARY_PATH=/N/soft/sles15/nvidia/21.5/Linux_x86_64/21.5/comm_libs/nccl/lib/:$LD_LIBRARY_PATH

@@ -503,7 +503,7 @@ def train_val_test(
             torch.profiler.ProfilerActivity.CUDA
         ],
         schedule=torch.profiler.schedule(
-            wait=2,
+            wait=1,
             warmup=2,
             active=2,
         ),
@@ -528,7 +528,7 @@ def train_val_test(
             )
             val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
             results.val_aurocs.append(val_auroc)
-            if epoch == 1 or epoch == 6 or epoch == 11:
+            if epoch == 0 or epoch == 5 or epoch == 10:
                 p.step()
             if epoch % 10 == 0:
                 # torch.save is not a good way, because it can not achieve reshard

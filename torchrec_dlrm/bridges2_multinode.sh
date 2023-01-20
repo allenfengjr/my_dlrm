@@ -3,9 +3,10 @@
 #SBATCH --job-name=auto
 #SBATCH -p GPU
 #SBATCH -N 2
-#SBATCH -t 24:00:00
+#SBATCH -t 1:00:00
 #SBATCH --output=bridge_%j.log 
 #SBATCH --gpus=v100-32:16
+#SBATCH --mem=300g
 
 #module load nvidia
 #export LD_LIBRARY_PATH=/N/soft/sles15/nvidia/21.5/Linux_x86_64/21.5/comm_libs/nccl/lib/:$LD_LIBRARY_PATH
@@ -26,6 +27,10 @@ export EPOCH=100
 export DATASET_PATH="/ocean/projects/asc200010p/haofeng1/criteo_TB_processed/"
 export TRACE_PATH="/ocean/projects/asc200010p/haofeng1/trace_results/2x8/"
 export SAVE_PATH="/ocean/projects/asc200010p/haofeng1/dlrm_models/"
+export NCCL_DEBUG=INFO
+export NCCL_DEBUG_SUBSYS=ALL
+
+
 cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc
 conda init
@@ -40,4 +45,5 @@ srun -n 16 python dlrm_main.py --epochs=$EPOCH \
 --shuffle_batches \
 --print_sharding_plan \
 --save_path=$SAVE_PATH \
---trace_path=$TRACE_PATH
+--trace_path=$TRACE_PATH \
+--enable_profiling \

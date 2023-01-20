@@ -6,7 +6,7 @@
 #SBATCH --gpus-per-node=4
 #SBATCH --ntasks-per-node=4
 #SBATCH --time=00:30:00
-#SBATCH --output=output_%j.log 
+#SBATCH --output=bigred_test_%j.log 
 #SBATCH --mem=200G
 
 #module load nvidia
@@ -24,12 +24,13 @@ echo "NODELIST="${SLURM_NODELIST}
 master_addr=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
 export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
-export EPOCH=100
+export EPOCH=1
 export DATASET_PATH="/N/scratch/haofeng/TB/processed/"
-cd ~/my_dlrm/torchrec_dlrm/
+export NCCL_DEBUG=INFO
+export NCCL_DEBUG_SUBSYS=ALL
+cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc
 conda init
 conda activate dlrm
 
 srun -n 16 python dlrm_main.py --epochs=$EPOCH \
---save_path="/N/scratch/haofeng/dlrm_models/test"

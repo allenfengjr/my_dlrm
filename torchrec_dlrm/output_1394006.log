@@ -1,149 +1,0 @@
-WORLD_SIZE=4
-NODELIST=nid[0663-0664]
-MASTER_ADDR=nid0663
-no change     /N/slate/haofeng/anaconda3/condabin/conda
-no change     /N/slate/haofeng/anaconda3/bin/conda
-no change     /N/slate/haofeng/anaconda3/bin/conda-env
-no change     /N/slate/haofeng/anaconda3/bin/activate
-no change     /N/slate/haofeng/anaconda3/bin/deactivate
-no change     /N/slate/haofeng/anaconda3/etc/profile.d/conda.sh
-no change     /N/slate/haofeng/anaconda3/etc/fish/conf.d/conda.fish
-no change     /N/slate/haofeng/anaconda3/shell/condabin/Conda.psm1
-no change     /N/slate/haofeng/anaconda3/shell/condabin/conda-hook.ps1
-no change     /N/slate/haofeng/anaconda3/lib/python3.9/site-packages/xontrib/conda.xsh
-no change     /N/slate/haofeng/anaconda3/etc/profile.d/conda.csh
-no change     /N/u/haofeng/BigRed200/.bashrc
-No action taken.
-[Connection] intra_group: [0] -> [[0, 1]]
-[Connection] intra_group: [1] -> [[0, 1]]
-[Connection] intra_group: [3] -> [[2, 3]]
-[Connection] intra_group: [2] -> [[2, 3]]
-[Connection] cross_group: [2] -> [[0, 2]]
-[Connection] cross_group: [0] -> [[0, 2]]
-[Connection] cross_group: [3] -> [[1, 3]]
-[Connection] cross_group: [1] -> [[1, 3]]
-PARAMS: (lr, batch_size, warmup_steps, decay_start, decay_steps): (15.0, 32, 0, 0, 0)
-use random dataset
-/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
-  warnings.warn(
-Epoch 0:   0%|          | 0/10 [00:00<?, ?it/s]/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
-  warnings.warn(
-/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
-  warnings.warn(
-/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2849: UserWarning: torch.distributed._reduce_scatter_base is a private function and will be deprecated. Please use torch.distributed.reduce_scatter_tensor instead.
-  warnings.warn(
-/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
-  warnings.warn(
-/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
-  warnings.warn(
-/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
-  warnings.warn(
-/N/slate/haofeng/anaconda3/envs/dlrm/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:2387: UserWarning: torch.distributed._all_gather_base is a private function and will be deprecated. Please use torch.distributed.all_gather_into_tensor instead.
-  warnings.warn(
-Epoch 0:  10%|█         | 1/10 [00:06<01:02,  6.90s/it]Epoch 0:  80%|████████  | 8/10 [00:06<00:01,  1.15it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 19.05it/s]
-AUROC over val set: 0.48582995951417.
-Number of val samples: 1024
-Epoch 1:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 1:  60%|██████    | 6/10 [00:00<00:00, 58.07it/s]Epoch 1:  80%|████████  | 8/10 [00:00<00:00, 59.35it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:11<00:02,  1.42s/it]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 2:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 2:  70%|███████   | 7/10 [00:00<00:00, 62.72it/s]Epoch 2:  80%|████████  | 8/10 [00:00<00:00, 58.97it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 219.48it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 3:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 3:  80%|████████  | 8/10 [00:00<00:00, 101.04it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 224.00it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 4:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 4:  80%|████████  | 8/10 [00:00<00:00, 74.65it/s]Epoch 4:  80%|████████  | 8/10 [00:00<00:00, 74.46it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 229.70it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 5:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 5:  80%|████████  | 8/10 [00:00<00:00, 83.51it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 226.98it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 6:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 6:  80%|████████  | 8/10 [00:00<00:00, 62.45it/s]Epoch 6:  80%|████████  | 8/10 [00:00<00:00, 62.32it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 228.79it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 7:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 7:  80%|████████  | 8/10 [00:00<00:00, 78.44it/s]Epoch 7:  80%|████████  | 8/10 [00:00<00:00, 78.22it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 227.91it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 8:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 8:  80%|████████  | 8/10 [00:00<00:00, 90.97it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 218.73it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 9:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 9:  80%|████████  | 8/10 [00:00<00:00, 81.22it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 225.03it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 10:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 10:  60%|██████    | 6/10 [00:00<00:00, 59.16it/s]Epoch 10:  80%|████████  | 8/10 [00:00<00:00, 70.10it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 225.14it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 11:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 11:  80%|████████  | 8/10 [00:00<00:00, 79.62it/s]Epoch 11:  80%|████████  | 8/10 [00:00<00:00, 79.33it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 150.46it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 12:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 12:  80%|████████  | 8/10 [00:00<00:00, 87.04it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 228.39it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 13:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 13:  80%|████████  | 8/10 [00:00<00:00, 64.65it/s]Epoch 13:  80%|████████  | 8/10 [00:00<00:00, 64.51it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 228.42it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 14:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 14:  60%|██████    | 6/10 [00:00<00:00, 50.06it/s]Epoch 14:  80%|████████  | 8/10 [00:00<00:00, 56.13it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 227.14it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 15:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 15:  80%|████████  | 8/10 [00:00<00:00, 61.83it/s]Epoch 15:  80%|████████  | 8/10 [00:00<00:00, 61.70it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 228.64it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 16:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 16:  50%|█████     | 5/10 [00:00<00:00, 44.69it/s]Epoch 16:  80%|████████  | 8/10 [00:00<00:00, 57.86it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 226.83it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 17:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 17:  70%|███████   | 7/10 [00:00<00:00, 61.43it/s]Epoch 17:  80%|████████  | 8/10 [00:00<00:00, 66.45it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 218.17it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 18:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 18:  80%|████████  | 8/10 [00:00<00:00, 87.20it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 227.70it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Epoch 19:   0%|          | 0/10 [00:00<?, ?it/s]Epoch 19:  80%|████████  | 8/10 [00:00<00:00, 78.46it/s]Epoch 19:  80%|████████  | 8/10 [00:00<00:00, 78.25it/s]
-Total number of iterations: 8
-Evaluating val set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating val set:  80%|████████  | 8/10 [00:00<00:00, 225.80it/s]
-AUROC over val set: 0.5.
-Number of val samples: 1024
-Evaluating test set:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating test set:  80%|████████  | 8/10 [00:00<00:00, 223.31it/s]
-use random dataset
-PARAMS: (lr, batch_size, warmup_steps, decay_start, decay_steps): (15.0, 32, 0, 0, 0)
-use random dataset
-use random dataset
-AUROC over test set: 0.5.
-Number of test samples: 1024

@@ -114,6 +114,7 @@ def _get_in_memory_dataloader(
         batch_size=None,
         pin_memory=args.pin_memory,
         collate_fn=lambda x: x,
+        #num_workers=args.num_workers
     )
     return dataloader
 

@@ -334,6 +334,13 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
         action="store_true",
         help="Print the sharding plan used for each embedding table.",
     )
+    parser.add_argument("--num_workers", type=int, default=0)
+    parser.add_argument(
+        "--enable_profiling",
+        action="store_true",
+        help="Set if enable profiling.",
+    )
+
     return parser.parse_args(argv)
 
 
@@ -342,7 +349,7 @@ def _evaluate(
         eval_pipeline: TrainPipelineSparseDist,
         eval_dataloader: DataLoader,
         stage: str,
-) -> float:
+) -> None:
     """
     Evaluates model. Computes and prints AUROC. Helper function for train_val_test.
 
@@ -390,7 +397,7 @@ def _evaluate(
     if is_rank_zero:
         print(f"AUROC over {stage} set: {auroc_result}.")
         print(f"Number of {stage} samples: {num_samples}")
-    return auroc_result
+    return _loss, auroc_result
 
 
 def _train(
@@ -446,9 +453,9 @@ def _train(
             torch.profiler.ProfilerActivity.CUDA
         ],
         schedule=torch.profiler.schedule(
-            wait=1,
-            warmup=1,
-            active=40,
+            wait=20,
+            warmup=20,
+            active=2,
         ),
         on_trace_ready=torch.profiler.tensorboard_trace_handler(trace_path, worker_name="rank"+str(dist.get_rank())),
         record_shapes=True,
@@ -466,13 +473,15 @@ def _train(
                 if is_rank_zero:
                     pbar.update(1)
                 if validation_freq and it % validation_freq == 0:
-                    _evaluate(limit_val_batches, val_pipeline, val_dataloader, "val")
+                    loss, auroc = _evaluate(limit_val_batches, val_pipeline, val_dataloader, "val")
+                    print("Loss is: ",loss)
+                    print("AUROC is: ", auroc)
                     train_pipeline._model.train()
             except StopIteration:
                 if is_rank_zero:
                     print("Total number of iterations:", it - 1)
                 break
-            if enable_trace and it < 42:
+            if enable_trace and it < 43:
                 pp.step()
 
 
@@ -523,7 +532,9 @@ def train_val_test(
         if epoch%5==0:
             enable_trace=True
         else:
-            enable_trace=False
+            enable_trace=True
+        if not args.enable_profiling:
+            enable_trace = False
         _train(
             train_pipeline,
             val_pipeline,
@@ -538,7 +549,7 @@ def train_val_test(
             args.trace_path,
             enable_trace
         )
-        val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
+        val_loss, val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
         results.val_aurocs.append(val_auroc)
         """
         if epoch % 10 == 0:
@@ -555,7 +566,7 @@ def train_val_test(
                 for path in entries.keys():
                     print(path)
         """
-    test_auroc = _evaluate(args.limit_test_batches, test_pipeline, test_dataloader, "test")
+    test_loss, test_auroc = _evaluate(args.limit_test_batches, test_pipeline, test_dataloader, "test")
     results.test_auroc = test_auroc
 
     return results

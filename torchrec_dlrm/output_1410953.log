@@ -1,30 +1,0 @@
-WORLD_SIZE=16
-NODELIST=nid[0642,0700-0702]
-MASTER_ADDR=nid0642
-no change     /N/slate/haofeng/anaconda3/condabin/conda
-no change     /N/slate/haofeng/anaconda3/bin/conda
-no change     /N/slate/haofeng/anaconda3/bin/conda-env
-no change     /N/slate/haofeng/anaconda3/bin/activate
-no change     /N/slate/haofeng/anaconda3/bin/deactivate
-no change     /N/slate/haofeng/anaconda3/etc/profile.d/conda.sh
-no change     /N/slate/haofeng/anaconda3/etc/fish/conf.d/conda.fish
-no change     /N/slate/haofeng/anaconda3/shell/condabin/Conda.psm1
-no change     /N/slate/haofeng/anaconda3/shell/condabin/conda-hook.ps1
-no change     /N/slate/haofeng/anaconda3/lib/python3.9/site-packages/xontrib/conda.xsh
-no change     /N/slate/haofeng/anaconda3/etc/profile.d/conda.csh
-no change     /N/u/haofeng/BigRed200/.bashrc
-No action taken.
-PARAMS: (lr, batch_size, warmup_steps, decay_start, decay_steps): (15.0, 4096, 0, 0, 0)
-Epoch 0:   0%|          | 0/64014 [00:00<?, ?it/s]Epoch 0:   0%|          | 1/64014 [00:08<142:37:44,  8.02s/it]Epoch 0:   0%|          | 4/64014 [00:08<27:33:19,  1.55s/it] Epoch 0:   0%|          | 7/64014 [00:08<13:06:19,  1.36it/s]Epoch 0:   0%|          | 10/64014 [00:08<7:43:17,  2.30it/s]Epoch 0:   0%|          | 13/64014 [00:08<5:04:53,  3.50it/s]Epoch 0:   0%|          | 17/64014 [00:08<3:11:28,  5.57it/s]Epoch 0:   0%|          | 20/64014 [00:08<2:23:37,  7.43it/s]Epoch 0:   0%|          | 23/64014 [00:08<1:51:14,  9.59it/s]Epoch 0:   0%|          | 26/64014 [00:08<1:29:35, 11.90it/s]Epoch 0:   0%|          | 29/64014 [00:09<1:14:00, 14.41it/s]Epoch 0:   0%|          | 32/64014 [00:09<1:03:07, 16.89it/s]Epoch 0:   0%|          | 35/64014 [00:09<55:25, 19.24it/s]  Epoch 0:   0%|          | 38/64014 [00:09<49:56, 21.35it/s]Epoch 0:   0%|          | 41/64014 [00:09<45:36, 23.38it/s]Epoch 0:   0%|          | 45/64014 [00:09<41:25, 25.74it/s]Epoch 0:   0%|          | 49/64014 [00:09<39:01, 27.32it/s]Epoch 0:   0%|          | 53/64014 [00:09<37:26, 28.47it/s]Epoch 0:   0%|          | 57/64014 [00:10<36:07, 29.51it/s]Epoch 0:   0%|          | 61/64014 [00:10<35:40, 29.87it/s]Epoch 0:   0%|          | 65/64014 [00:10<36:10, 29.46it/s]Epoch 0:   0%|          | 69/64014 [00:10<35:33, 29.97it/s]Epoch 0:   0%|          | 73/64014 [00:10<34:58, 30.47it/s]Epoch 0:   0%|          | 77/64014 [00:10<34:33, 30.83it/s]Epoch 0:   0%|          | 81/64014 [00:10<34:03, 31.28it/s]Epoch 0:   0%|          | 85/64014 [00:10<34:02, 31.30it/s]Epoch 0:   0%|          | 89/64014 [00:11<33:53, 31.43it/s]Epoch 0:   0%|          | 93/64014 [00:11<33:55, 31.41it/s]Epoch 0:   0%|          | 97/64014 [00:11<33:48, 31.51it/s]Epoch 0:   0%|          | 101/64014 [00:11<33:54, 31.41it/s]Epoch 0:   0%|          | 105/64014 [00:11<34:00, 31.32it/s]Epoch 0:   0%|          | 109/64014 [00:11<34:01, 31.30it/s]Epoch 0:   0%|          | 113/64014 [00:11<33:53, 31.43it/s]Epoch 0:   0%|          | 117/64014 [00:11<33:Total number of iterations: 64014
-PARAMS: (lr, batch_size, warmup_steps, decay_start, decay_steps): (15.0, 4096, 0, 0, 0)
-PARAMS: (lr, batch_size, warmup_steps, decay_start, decay_steps): (15.0, 4096, 0, 0, 0)
-AUROC over val set: 0.799177140530413.
-Number of val samples: 89137319
-PARAMS: (lr, batch_size, warmup_steps, decay_start, decay_steps): (15.0, 4096, 0, 0, 0)
-srun: error: nid0701: tasks 10-11: Exited with exit code 1
-srun: launch/slurm: _step_signal: Terminating StepId=1410953.0
-srun: error: nid0700: tasks 5-6: Exited with exit code 1
-srun: error: nid0642: task 1: Exited with exit code 1
-srun: error: nid0702: tasks 13-14: Exited with exit code 1
-srun: error: nid0642: task 2: Exited with exit code 1
-srun: error: nid0701: task 9: Exited with exit code 1

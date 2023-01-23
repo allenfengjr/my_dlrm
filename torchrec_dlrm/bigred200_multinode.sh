@@ -30,6 +30,8 @@ export SAVE_PATH="/N/scratch/haofeng/dlrm_models/"
 export BATCH_SIZE=4096
 export NCCL_DEBUG=INFO
 export NCCL_DEBUG_SUBSYS=ALL
+export NCCL_TOPO_DUMP_FILE=~/new_dlrm/torchrec_dlrm/nccl_topo.xml
+export DLRM_DISTRIBUTED=TRUE
 mkdir $TRACE_PATH
 cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc
@@ -47,4 +49,4 @@ srun -n 16 python dlrm_main.py --epochs=$EPOCH \
 --print_sharding_plan \
 --save_path=$SAVE_PATH \
 --trace_path=$TRACE_PATH \
---validation_freq_within_epoch 128
+--validation_freq_within_epoch 1024

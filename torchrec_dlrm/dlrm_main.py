@@ -89,9 +89,12 @@ def set_environment():
         os.environ["GPU_PER_NODE"] = str(torch.cuda.device_count())
         os.environ["LOCAL_WORLD_SIZE"] = str(torch.cuda.device_count())
         os.environ["LOCAL_RANK"] = str(int(os.environ["RANK"]) % int(os.environ['GPU_PER_NODE']))
+    """
     if 'NCCL_DEBUG' in os.environ:
         if os.environ["RANK"] != '0':
             os.environ["NCCL_DEBUG"] = "VERSION"
+    """
+    os.environ["NCCL_TOPO_DUMP_FILE"]="~/new_dlrm/torchrec_dlrm/nccl_topo_allrank.xml"
     return None
 
 

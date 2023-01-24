@@ -9,11 +9,12 @@
 #SBATCH --output=bigred_%j.log 
 #SBATCH --mem=200G
 
-#module load nvidia
-#export LD_LIBRARY_PATH=/N/soft/sles15/nvidia/21.5/Linux_x86_64/21.5/comm_libs/nccl/lib/:$LD_LIBRARY_PATH
-#export LD_LIBRARY_PATH=/N/soft/sles15/nvidia/21.5/Linux_x86_64/21.5/comm_libs/openmpi4/openmpi-4.0.5/lib/:$LD_LIBRARY_PATH
-#export PATH=/N/soft/sles15/nvidia/21.5/Linux_x86_64/21.5/comm_libs/openmpi4/openmpi-4.0.5/bin/:$PATH
-
+module load nvidia
+export LD_LIBRARY_PATH=/N/soft/sles15/nvidia/21.5/Linux_x86_64/21.5/comm_libs/nccl/lib/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/N/soft/sles15/nvidia/21.5/Linux_x86_64/21.5/comm_libs/openmpi4/openmpi-4.0.5/lib/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/N/soft/sles15/nvidia/21.5/Linux_x86_64/21.5/cuda/lib64:$LD_LIBRARY_PATH
+export PATH=/N/soft/sles15/nvidia/21.5/Linux_x86_64/21.5/comm_libs/openmpi4/openmpi-4.0.5/bin/:$PATH
+module load cudatoolkit
 #echo $LD_LIBRARY_PATH
 
 
@@ -30,8 +31,7 @@ export SAVE_PATH="/N/scratch/haofeng/dlrm_models/"
 export BATCH_SIZE=4096
 export NCCL_DEBUG=INFO
 export NCCL_DEBUG_SUBSYS=ALL
-export NCCL_TOPO_DUMP_FILE=~/new_dlrm/torchrec_dlrm/nccl_topo.xml
-export DLRM_DISTRIBUTED=TRUE
+export NCCL_TOPO_DUMP_FILE=~/new_dlrm/torchrec_dlrm/nccl_topo_multinode.xml
 mkdir $TRACE_PATH
 cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc

@@ -11,6 +11,8 @@ def change_layout_method(data,layout):
     if layout == 'original':
     elif layout == "1D_sample":
     elif layout == "1D_table":
+    else:
+        
 class zfpCompressor:
     def compress(self,data,l_error_bound,layout):
 

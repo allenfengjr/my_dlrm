@@ -29,7 +29,7 @@ export TRACE_PATH="/ocean/projects/asc200010p/haofeng1/trace_results/2x8/"
 export SAVE_PATH="/ocean/projects/asc200010p/haofeng1/dlrm_models/"
 export NCCL_DEBUG=INFO
 export NCCL_DEBUG_SUBSYS=ALL
-
+export NCCL_TOPO_DUMP_FILE=~/my_dlrm/torchrec_dlrm/nccl_topo_multinode.xml
 
 cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc

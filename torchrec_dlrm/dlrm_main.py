@@ -11,10 +11,13 @@ import sys
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import List, Optional
+from numpy import asarray
+from numpy import savetxt
+
 
 import torchsnapshot
 import torch
-import torcheval.metrics as metrics
+import torchmetrics as metrics
 import torch.profiler
 from pyre_extensions import none_throws
 from torch import distributed as dist
@@ -33,6 +36,7 @@ from torchrec.distributed.planner.storage_reservations import (
     HeuristicalStorageReservation,
 )
 from torchrec.models.dlrm import DLRM, DLRM_DCN, DLRM_Projection, DLRMTrain
+from model.dlrm_with_compress import DLRM as DLRM_Comp
 from torchrec.modules.embedding_configs import EmbeddingBagConfig
 from torchrec.optim.apply_optimizer_in_backward import apply_optimizer_in_backward
 from torchrec.optim.keyed import CombinedOptimizer, KeyedOptimizerWrapper
@@ -65,7 +69,6 @@ except ImportError:
 
 TRAIN_PIPELINE_STAGES = 3  # Number of stages in TrainPipelineSparseDist.
 
-
 class InteractionType(Enum):
     ORIGINAL = "original"
     DCN = "dcn"
@@ -94,7 +97,8 @@ def set_environment():
         if os.environ["RANK"] != '0':
             os.environ["NCCL_DEBUG"] = "VERSION"
     """
-    os.environ["NCCL_TOPO_DUMP_FILE"]="~/new_dlrm/torchrec_dlrm/nccl_topo_allrank.xml"
+    #os.environ["NCCL_TOPO_DUMP_FILE"]="/N/u/haofeng/BigRed200/new_dlrm/torchrec_dlrm/nccl_topo_all"+os.environ["RANK"]+".xml"
+    #print("TOPO_DUMP file path is", os.environ["NCCL_TOPO_DUMP_FILE"])
     return None
 
 
@@ -264,9 +268,9 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
         help="Shuffle the training set in memory. This will override mmap_mode",
     )
     parser.add_argument(
-        "--validation_freq_within_epoch",
+        "--validation_freq",
         type=int,
-        default=None,
+        default=128,
         help="Frequency at which validation will be run within an epoch.",
     )
     parser.add_argument(
@@ -284,7 +288,7 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
     # I edit pin_memory from None to True
     parser.set_defaults(
         pin_memory=None,
-        mmap_mode=True,
+        mmap_mode=None,
         drop_last=None,
         shuffle_batches=None,
         shuffle_training_set=None,
@@ -380,30 +384,36 @@ def _evaluate(
     two_filler_batches = itertools.islice(iter(eval_dataloader), TRAIN_PIPELINE_STAGES - 1)
     iterator = itertools.chain(iterator, two_filler_batches)
 
-    auroc = metrics.BinaryAUROC(device=device)
-
+    auroc = metrics.AUROC(compute_on_step=False, task='binary').to(device)
+    accuracy = metrics.Accuracy(compute_on_step=False, task='binary').to(device)
     is_rank_zero = dist.get_rank() == 0
+    """
+    # I delete the output part of evaluation part
     if is_rank_zero:
         pbar = tqdm(
             iter(int, 1), desc=f"Evaluating {stage} set", total=len(eval_dataloader), disable=False
         )
+    """
     with torch.no_grad():
         while True:
             try:
                 _loss, logits, labels = eval_pipeline.progress(iterator)
                 preds = torch.sigmoid(logits)
-                auroc.update(preds, labels)
-                if is_rank_zero:
-                    pbar.update(1)
+                accuracy(preds, labels)
+                auroc(preds, labels)
             except StopIteration:
                 break
     auroc_result = auroc.compute().item()
-    num_samples = torch.tensor(sum(map(len, auroc.targets)), device=device)
+    accuracy_result = accuracy.compute().item()
+    num_samples = torch.tensor(sum(map(len, auroc.target)), device=device)
     dist.reduce(num_samples, 0, op=dist.ReduceOp.SUM)
+    """
     if is_rank_zero:
         print(f"AUROC over {stage} set: {auroc_result}.")
+        print(f"Accuracy over {stage} set: {accuracy_result}.")
         print(f"Number of {stage} samples: {num_samples}")
-    return _loss, auroc_result
+    """
+    return _loss, auroc_result, accuracy_result
 
 
 def _train(
@@ -418,7 +428,10 @@ def _train(
         limit_train_batches: Optional[int],
         limit_val_batches: Optional[int],
         trace_path:Optional[str],
-        enable_trace
+        enable_trace,
+        acc_res,
+        loss_res,
+        auroc_res
 ) -> None:
     """
     Trains model for 1 epoch. Helper function for train_val_test.
@@ -451,8 +464,8 @@ def _train(
     iterator = itertools.chain(iterator, two_filler_batches)
 
     is_rank_zero = dist.get_rank() == 0
-    if is_rank_zero:
-        pbar = tqdm(iter(int, 1), desc=f"Epoch {epoch}", total=len(train_dataloader), disable=False)
+    #if is_rank_zero:
+        #pbar = tqdm(iter(int, 1), desc=f"Epoch {epoch}", total=len(train_dataloader), disable=False, mininterval=30)
     with torch.profiler.profile(
         activities=[
             torch.profiler.ProfilerActivity.CPU,
@@ -476,12 +489,13 @@ def _train(
                         print(f"lr: {it} {i} {g['lr']:.6f}")
                 train_pipeline.progress(iterator)
                 lr_scheduler.step()
-                if is_rank_zero:
-                    pbar.update(1)
-                if validation_freq and it % validation_freq == 0:
-                    loss, auroc = _evaluate(limit_val_batches, val_pipeline, val_dataloader, "val")
-                    print("Loss is: ",loss)
-                    print("AUROC is: ", auroc)
+                if it % 128 == 0:
+                    loss, auroc, acc = _evaluate(limit_val_batches, val_pipeline, val_dataloader, "val")
+                    if is_rank_zero:
+                        #loss_res.append(loss.item())
+                        #auroc_res.append(auroc)
+                        #acc_res.append(acc)
+                        print(acc,flush=True)
                     train_pipeline._model.train()
             except StopIteration:
                 if is_rank_zero:
@@ -506,6 +520,9 @@ def train_val_test(
         val_dataloader: DataLoader,
         test_dataloader: DataLoader,
         lr_scheduler: LRPolicyScheduler,
+        acc_res,
+        loss_res,
+        auroc_res
 ) -> TrainValTestResults:
     """
     Train/validation/test loop.
@@ -549,13 +566,19 @@ def train_val_test(
             epoch,
             lr_scheduler,
             args.print_lr,
-            args.validation_freq_within_epoch,
+            args.validation_freq,
             args.limit_train_batches,
             args.limit_val_batches,
             args.trace_path,
-            enable_trace
+            enable_trace,
+            acc_res,
+            loss_res,
+            auroc_res
         )
-        val_loss, val_auroc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
+        print(acc_res)
+        print(loss_res)
+        print(auroc_res)
+        val_loss, val_auroc, val_acc = _evaluate(args.limit_val_batches, val_pipeline, val_dataloader, "val")
         results.val_aurocs.append(val_auroc)
         """
         if epoch % 10 == 0:
@@ -572,7 +595,7 @@ def train_val_test(
                 for path in entries.keys():
                     print(path)
         """
-    test_loss, test_auroc = _evaluate(args.limit_test_batches, test_pipeline, test_dataloader, "test")
+    test_loss, test_auroc, test_acc = _evaluate(args.limit_test_batches, test_pipeline, test_dataloader, "test")
     results.test_auroc = test_auroc
 
     return results
@@ -594,6 +617,9 @@ def main(argv: List[str]) -> None:
     Returns:
         None.
     """
+    loss_result = []
+    auroc_result= []
+    acc_result = []
     args = parse_args(argv)
     for name, val in vars(args).items():
         try:
@@ -778,9 +804,23 @@ def main(argv: List[str]) -> None:
         val_dataloader,
         test_dataloader,
         lr_scheduler,
+        acc_result,
+        loss_result,
+        auroc_result
     )
     if args.collect_multi_hot_freqs_stats:
         multihot.save_freqs_stats()
+    if rank == 0:
+        print(loss_result)
+        print(auroc_result)
+        print(acc_result)
+        loss_result = asarray(loss_result)
+        auroc_result = asarray(auroc_result)
+        acc_result = asarray(acc_result)
+        # save to csv file
+        savetxt("/N/u/haofeng/BigRed200/new_dlrm/torchrec_dlrm/loss_result_lr5.csv", loss_result, delimiter=',')
+        savetxt("/N/u/haofeng/BigRed200/new_dlrm/torchrec_dlrm/auroc_result_lr5.csv", auroc_result, delimiter=',')
+        savetxt("/N/u/haofeng/BigRed200/new_dlrm/torchrec_dlrm/acc_result_lr5.csv", acc_result, delimiter=',')
 
 
 if __name__ == "__main__":

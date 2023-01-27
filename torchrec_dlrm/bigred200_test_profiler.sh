@@ -26,8 +26,8 @@ export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
 export EPOCH=1
 export DATASET_PATH="/N/scratch/haofeng/TB/processed/"
-export NCCL_DEBUG=INFO
-export NCCL_DEBUG_SUBSYS=ALL
+# NCCL_DEBUG=INFO
+#export NCCL_DEBUG_SUBSYS=ALL
 cd ~/new_dlrm/torchrec_dlrm/
 source ~/.bashrc
 conda init

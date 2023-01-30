@@ -35,7 +35,7 @@ from torchrec.distributed.planner import EmbeddingShardingPlanner, Topology
 from torchrec.distributed.planner.storage_reservations import (
     HeuristicalStorageReservation,
 )
-from torchrec.models.dlrm import DLRM, DLRM_DCN, DLRM_Projection, DLRMTrain
+from model.dlrm_with_compress import DLRM, DLRMTrain
 from torchrec.modules.embedding_configs import EmbeddingBagConfig
 from torchrec.optim.apply_optimizer_in_backward import apply_optimizer_in_backward
 from torchrec.optim.keyed import CombinedOptimizer, KeyedOptimizerWrapper
@@ -490,8 +490,11 @@ def _train(
                 # training
                 train_loss, train_logits, train_labels = train_pipeline.progress(iterator)
                 lr_scheduler.step()
+                if is_rank_zero:
+                    print("it: ", it)
                 if it % 128 == 0:
-                    print(train_labels)
+                    if is_rank_zero:
+                        print(train_pipeline._model)
                     loss, auroc, acc = _evaluate(limit_val_batches, val_pipeline, val_dataloader, "val")
                     device = train_pipeline._device
                     auroc_metric = metrics.AUROC(compute_on_step=False, task='binary').to(device)
